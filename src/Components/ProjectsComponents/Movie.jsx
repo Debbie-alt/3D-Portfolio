@@ -5,7 +5,7 @@ const Movie = () => {
   return (
       <section className="cardContainer relative  w-full flex justify-center  px-10  h-[75vh]  ">
                
-      <figure className="card w-full h-[70vh]  flex flex-col px-4  rounded-md">
+      <figure className="card w-full object-cover h-[70vh]  flex flex-col  rounded-md">
         <img src={mov} alt=""  />
   
 

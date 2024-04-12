@@ -1,12 +1,11 @@
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom/dist";
 import Taskbar from "./Components/Taskbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Homepage from "./Homepage";
 import AboutMe from "./AboutMe/AboutMe";
 import Projects from "./Projects/Projects";
-import Scroll from "./Components/ScrollDown";
-import Responsive from "./test2";
+import SimpleSlider from "./ProjectCarousel";
+import WavyDiv from "./AboutMe/svg";
 import whistle from './assets/sound-effect-twinkle.mp3'
 
 function App() {
@@ -41,12 +40,13 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Homepage mode={mode} />} />
+          {/* <Route path="/" element={<WavyDiv/>}/> */}
           <Route path="/e" element={<AboutMe />} />
           <Route path="/new" element={<Taskbar />} />
          <Route path="/projs" element={<Projects />}></Route>
-         <Route path="/test2" element={<Responsive/>}></Route>
+         <Route path="/test2" element={<SimpleSlider/>}></Route>
         </Routes>
-        <Scroll />
+        
         <Taskbar mode={mode} toggleMode={toggleMode} />
       </main>
   

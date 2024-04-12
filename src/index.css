@@ -52,6 +52,9 @@
   background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(15px);
 }
+#light .Aboutme {
+  border: 1.5px solid black;
+}
 #dark .carousel-button{
   color: rgb(200, 76, 96);
 }
@@ -84,6 +87,7 @@
     1px -12px 1px rgb(165, 25, 74),
     1px -13px;
 }
+
 .prod {
   display: flex;
   position:absolute;
@@ -129,4 +133,12 @@
   box-shadow: -20px -50px 50px rgb(74, 18, 26);
 }
 
+.digitalresume{
+  overflow-y:scroll;
+}
+
+
+#light .pdf-download-btn{
+  color: black;
+}
 

@@ -8,9 +8,14 @@ import Social from "./AboutMe/Social";
 import { useState, useEffect } from "react";
 import Github from "./Components/Icons/Github";
 import MySocials from "./AboutMe/MySocials";
+import DigitalResume from "./AboutMe/DigitalResume";
+import Scroll from "./Components/ScrollDown";
+
 
 const Homepage = ({ mode }) => {
   const [textColor, setTextColor] = useState("white");
+
+  
 
   useEffect(() => {
     if (mode == "dark") {
@@ -21,10 +26,15 @@ const Homepage = ({ mode }) => {
   return (
     <>
       <main className="">
+        
         <div className="wall"></div>
         <div className="flex flex-col space-y-6  -mt-48  mx-5">
           <section className=" flex  space-x-12">
             <Resume />
+          
+            <DigitalResume/>
+         
+            
             <Myself />
             <AboutMe />
             <Social />
@@ -47,6 +57,7 @@ const Homepage = ({ mode }) => {
           {" "}
           Don't like {mode} mode? Click on <br /> the icon!
         </figure>
+        <Scroll />
       </main>
     </>
   );

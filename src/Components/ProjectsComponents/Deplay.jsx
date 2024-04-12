@@ -22,18 +22,18 @@ const Deplay = () => {
     // >
     <section className="cardContainer relative w-full flex justify-center  px-10  h-[75vh]  ">
      
-      <figure className="card w-full h-[70vh]   flex flex-col px-4  rounded-md">
-       <img src={wina} alt="" className="" />
+      <figure className="card w-full h-[70vh]   flex flex-col   rounded-md">
+       <img src={wina} alt="" className=" w-full  top-0 absolute" />
         <button className="text-white bg-pink-500  font-serif  italic p-2 hover:opacity-80 rounded-xl">
           View Demo
         </button>
 
-        <div className="flex fixed bottom-8  space-x-5 rounded-full">
+        <div className="flex fixed bottom-8   space-x-5 rounded-full">
           {languages_icon.map((icons) => (
             <img
               src={icons.logo}
               alt={icons.alt}
-              className=" w-8 md:w-12 rounded-full"
+              className="object-cover  w-8 md:w-12 rounded-full"
             />
           ))}
         </div>

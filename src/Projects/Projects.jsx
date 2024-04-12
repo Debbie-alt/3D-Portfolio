@@ -1,9 +1,9 @@
 import React from "react";
 import "./Projects.css";
-import Slider from "react-slick";
+// import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { GrFormNext } from "react-icons/gr";
+// import { GrFormNext } from "react-icons/gr";
 
 const Projects = () => {
   const settings = {

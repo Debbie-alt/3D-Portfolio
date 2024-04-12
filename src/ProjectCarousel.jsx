@@ -22,7 +22,7 @@ export default class SimpleSlider extends Component {
       centerMode: true,
     };
     return (
-     <div className="w-screen  px-[5vw] py-3 space-y-4 carousel-page  relative">
+     <div className="w-screen  px-[5vw] py-3 space-y-4 carousel-page  relative" id="slider">
         <h1 className="font-serif italic bg-gradient-to-tl from-purple-200 to-pink-700 text-transparent bg-clip-text text-center   text-3xl z-10 ">
           My favorite projects
         </h1>
