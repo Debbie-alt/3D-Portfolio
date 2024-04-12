@@ -5,7 +5,6 @@ import Homepage from "./Homepage";
 import AboutMe from "./AboutMe/AboutMe";
 import Projects from "./Projects/Projects";
 import SimpleSlider from "./ProjectCarousel";
-import WavyDiv from "./AboutMe/svg";
 import whistle from './assets/sound-effect-twinkle.mp3'
 
 function App() {
@@ -40,7 +39,6 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Homepage mode={mode} />} />
-          {/* <Route path="/" element={<WavyDiv/>}/> */}
           <Route path="/e" element={<AboutMe />} />
           <Route path="/new" element={<Taskbar />} />
          <Route path="/projs" element={<Projects />}></Route>
