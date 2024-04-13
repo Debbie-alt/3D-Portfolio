@@ -25,11 +25,12 @@ const Homepage = ({ mode }) => {
   }, []);
   
   React.useEffect(() => {
-    // Check if el.current is not null before initializing Typed
     if (elx.current) {
       const typed = new Typed(elx.current, {
-        strings: ['<span class="text animate-pulse tracking-tightest text-[2.2em] md:text-[3.7em]" style:"whiteSpace: nowrap,wordBreak: keep-all">FUNMIS PORTFOLIO</span>'],
-        typeSpeed: 100,
+        strings: ['<span class="text animate-pulse tracking-tightest text-[2.2em] md:text-[3.7em]" style:"whiteSpace: nowrap,wordBreak: keep-all">FUNMIS PORTFOLIO</span>', "<span class='text animate-pulse tracking-tightest text-[2.2em] md:text-[3.7em]' style:'whiteSpace: nowrap,wordBreak: keep-all' >FE DEVELOPER</span>",
+        "<span class='text animate-pulse tracking-tightest text-[2.2em] md:text-[3.4em]' style:'whiteSpace: nowrap,wordBreak: keep-all' >FUNMIS PORTFOLIO</span>"
+      ],
+        typeSpeed: 90,
         contentType: 'html', 
         showCursor:false,
         preStringTyped: () => {

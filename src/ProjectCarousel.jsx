@@ -7,6 +7,8 @@ import Smarta from "./Components/ProjectsComponents/Smarta.jsx";
 import Movie from "./Components/ProjectsComponents/Movie.jsx";
 import Deplay from "./Components/ProjectsComponents/Deplay.jsx";
 import Tilt from 'react-parallax-tilt';
+import {Link} from "react-router-dom"
+import { FaArrowAltCircleDown } from "react-icons/fa";
 
 
 
@@ -21,6 +23,7 @@ export default class SimpleSlider extends Component {
       initialSlide: 1,
       centerMode: true,
     };
+
     return (
      <div className="w-screen  px-[5vw] py-3 space-y-4 carousel-page  relative" id="slider">
         <h1 className="font-serif italic bg-gradient-to-tl from-purple-200 to-pink-700 text-transparent bg-clip-text text-center   text-3xl z-10 ">
@@ -33,7 +36,10 @@ export default class SimpleSlider extends Component {
       scale={1.02}
       gyroscope={true}
       transitionSpeed= {200}
-    > */}
+      > */}
+      
+          
+
       
         <Slider {...settings}>
           <Deplay />

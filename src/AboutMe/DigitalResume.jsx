@@ -85,10 +85,19 @@ const DigitalResume = () => {
             
 
            </section>
+           <a
+        href="/Funmi's Resume.pdf"
+        role='button'
+        download=""
+        target='_blank'
+        className=" pdf-download-btn text-white text-md absolute top-[1%] left-[1.5%] cursor-pointer">
+            <IoCloudDownloadOutline />
+            {/* <PiDownloadBold/> */}
+         </a>
 
            <FaRegTimesCircle
            className='
-            pdf-download-btn text-pink-300 text-md absolute top-[1%] left-[0.8%] cursor-pointer'
+            pdf-download-btn text-[#ff7ea3] text-md absolute top-[2%] left-[97%] cursor-pointer'
            role='button'
               onClick={()=>{
             dgresume.classList.remove('prod')
@@ -98,15 +107,7 @@ const DigitalResume = () => {
           
          
         
-        <a
-        href="/Funmi's Resume.pdf"
-        role='button'
-        download=""
-        target='_blank'
-        className=" pdf-download-btn text-white text-xl absolute top-[2%] left-[95.5%] cursor-pointer">
-            {/* <IoCloudDownloadOutline /> */}
-            <PiDownloadBold/>
-         </a>
+       
         
       </section>
   )

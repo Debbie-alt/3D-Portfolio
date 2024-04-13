@@ -18,7 +18,7 @@
   font-family: 'Courier New', Courier, monospace;
   font-weight: 488;
   overflow-y: hidden;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 *{
   font-family: serif;
@@ -142,3 +142,29 @@
   color: black;
 }
 
+::-webkit-scrollbar {
+  width: 8px; /* width of the scrollbar */
+  height: 6px;
+}
+::-webkit-scrollbar{
+  background-color: rgba(0, 0, 0, 0.1)
+
+}
+::-webkit-scrollbar:hover {
+  background-color: rgba(0, 0, 0, 0.2 ); /* color of the scrollbar track on hover */
+}
+::-webkit-scrollbar-thumb{
+  background-color:rgb(0, 0, 0, 0.4);
+  width: 8px;
+  border-radius: 15px;
+  height: 30vh;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom,    black,  #c54b7a,   black);}
+#dark ::-webkit-scrollbar-thumb {
+  background-color:rgba(0, 0, 0, 0.5 );
+}
+
+#dark ::-webkit-scrollbar-thumb:hover{
+  background: linear-gradient(to bottom,    rgba(255, 255, 255, 0.5),  #c54b7a,   #a0a0a1);
+}
