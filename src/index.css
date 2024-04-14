@@ -17,8 +17,8 @@
   -webkit-text-size-adjust: 100%;
   font-family: 'Courier New', Courier, monospace;
   font-weight: 488;
-  overflow-y: hidden;
-  overflow-x: hidden;
+  overflow-y: scroll;
+  overflow-x: scroll;
 }
 *{
   font-family: serif;
@@ -168,3 +168,38 @@
 #dark ::-webkit-scrollbar-thumb:hover{
   background: linear-gradient(to bottom,    rgba(255, 255, 255, 0.5),  #c54b7a,   #a0a0a1);
 }
+.wave-container {
+  width: 50vw; /* Set the width to 100% of the viewport */
+  height: 900px; /* Set the height to 100% of the viewport */
+  overflow: hidden; /* Hide any overflowing parts of the curves */
+}
+
+.wave {
+  fill: #fff; /* Set the wave color to white */
+}
+
+.wave-1 {
+  animation: wave-motion 4s ease-in-out infinite; /* Animate the first wave */
+}
+
+.wave-2 {
+  animation: wave-motion-2 5s ease-in-out infinite; /* Animate the second wave with a slightly different speed */
+}
+
+/* @keyframes wave-motion {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1600px);
+  }
+}
+
+@keyframes wave-motion-2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1800px);
+  }
+} */

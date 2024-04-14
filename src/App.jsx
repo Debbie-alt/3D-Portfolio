@@ -6,6 +6,7 @@ import AboutMe from "./AboutMe/AboutMe";
 import Projects from "./Projects/Projects";
 import SimpleSlider from "./ProjectCarousel";
 import whistle from './assets/sound-effect-twinkle.mp3'
+import WavyShape from "./svvg";
 
 function App() {
   const [mode, setMode] = useState();
@@ -39,6 +40,7 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Homepage mode={mode} />} />
+          {/* <Route path="/" element={<WavyShape />} /> */}
           <Route path="/e" element={<AboutMe />} />
           <Route path="/new" element={<Taskbar />} />
          <Route path="/projs" element={<Projects />}></Route>
