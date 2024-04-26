@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -10,20 +12,23 @@
   color: rgba(255, 255, 255, 0.87);
   /* background-color:#c0c0c3; */
   font-synthesis: none;
-  /* width: 1200px; */
+  overflow-x: hidden;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
   font-family: 'Courier New', Courier, monospace;
   font-weight: 488;
-  overflow-y: scroll;
-  overflow-x: scroll;
 }
-*{
-  font-family: serif;
+ul{
+  list-style:circle;
+}
+
+  *{
+    font-family: 'Quicksand';
   /* font-style: italic; */
 }
+
 #light {
   background-color:#c0c0c3;
   color: black;
@@ -135,6 +140,7 @@
 
 .digitalresume{
   overflow-y:scroll;
+  overflow-x: hidden;
 }
 
 
@@ -166,40 +172,60 @@
 }
 
 #dark ::-webkit-scrollbar-thumb:hover{
-  background: linear-gradient(to bottom,    rgba(255, 255, 255, 0.5),  #c54b7a,   #a0a0a1);
-}
-.wave-container {
-  width: 50vw; /* Set the width to 100% of the viewport */
-  height: 900px; /* Set the height to 100% of the viewport */
-  overflow: hidden; /* Hide any overflowing parts of the curves */
+  background: linear-gradient(to bottom,    rgba(0, 0, 0, 0.2 ),  #c54b7a,   rgba(0, 0, 0, 0.2 ));
 }
 
-.wave {
-  fill: #fff; /* Set the wave color to white */
-}
-
-.wave-1 {
-  animation: wave-motion 4s ease-in-out infinite; /* Animate the first wave */
-}
-
-.wave-2 {
-  animation: wave-motion-2 5s ease-in-out infinite; /* Animate the second wave with a slightly different speed */
-}
-
-/* @keyframes wave-motion {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-1600px);
-  }
-}
-
-@keyframes wave-motion-2 {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-1800px);
-  }
+/* svg {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 } */
+/* .container {
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  padding-bottom: 100%;
+  vertical-align: middle;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+} */
+#dark .resume-header{
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.resume-header {
+  background-color: rgba(0, 0, 0, 0.1);
+
+}
+
+.skills-section{
+  background-color: rgba(0, 0, 0, 0.2);
+}
+#light .skills-section{
+  background-color: rgb(0, 0, 0, 0.1);
+}
+.hr{
+  background-color: red;
+}
+.skills-section figure {
+  background-color: rgba(19, 19, 255, 0.376);
+  width: fit-content;
+}
+.exp figure {
+  background-color: rgba(19, 19, 255, 0.376);
+  width: fit-content;
+}
+.frontend-eng{
+  color:rgba(19, 19, 255, 0.376) ;
+}
+#dark .frontend-eng{
+  color: rgb(116, 155, 222);
+}
+.exp blockquote{
+  color: #f695b0;
+}
+#light .exp blockquote{
+  color: #bd1053;
+}

@@ -3,6 +3,7 @@ import myphoto from '/myphoto.jpg'
 import { FaRegTimesCircle } from "react-icons/fa";
 import { IoCloudDownloadOutline } from "react-icons/io5";
 import { PiDownloadBold } from "react-icons/pi";
+import DigitalSkills from './DigitalSkills';
 
 
 
@@ -27,62 +28,30 @@ const DigitalResume = () => {
           id="dgresume">       
           <section className="w-full flex flex-col">
 
-            <div className=" text-center font-[300] "
-            >
-              <div className='flex space-x-20 py-5'>
-                  <img src={myphoto} alt="" className='  object-cover w-32 h-32 border-2  border-transparent bg-gradient-to-r from-pink-400 to-purple-400 mx-5 rounded-full' />
-                <h1 className='text-center font-bold text-xl '>Fayemi Funmilayo</h1>
+  
+                <header className='flex space-x-24 py-5 resume-header'>
+                    <img src={myphoto} alt="" className='  object-cover w-32 h-32 border-2  border-transparent bg-gradient-to-r from-pink-400 to-purple-400 mx-5 rounded-full' />
+                   
+                    <div className ="flex flex-col bg space-y-8">
+                      <ol className='container flex  space-x-5 bg-red-40 '>
+                        <li className=' frontend-eng= tracking-wide text-xs font-bold'>FRONTEND ENGINEER</li>
+                        <li className='text-xs font-bold'><a href="tel:+@347038502924">+2347036502924</a></li>
+                        <li className='text-xs text-underline'><a href="mailto:funmmy565@gmail.com">funmmy565@gmail.com</a></li>
+                     </ol>
+                      
+                       <p className=' header-name font-serif text-left tracking-widest text-5xl leading-30'> FUNMILAYO 
+                       <br /> FAYEMI
+                   
+                       </p>
 
-                </div>
-              </div>  
+                    </div>
+          
+                 </header>
+              
+               <hr className='w-screen hr' />
 
-
-              <div className="  text-center p-5 font-[300] ">
-                DigitalResume 
-                hgjnmrb 
-              </div>
-            
-
-              <div className="  text-center p-5 font-[300] ">
-                DigitalResume 
-                hgjnmrb 
-              </div>
-            
-              <div className="  text-center p-5 font-[300] ">
-                DigitalResume 
-                hgjnmrb 
-              </div>
-            
-              <div className="  text-center p-5 font-[300] ">
-                DigitalResume 
-                hgjnmrb 
-              </div>
-            
-              <div className="  text-center p-5 font-[300] ">
-                DigitalResume 
-                hgjnmrb 
-              </div>
-            
-              <div className="  text-center p-5 font-[300] ">
-                DigitalResume 
-                hgjnmrb 
-              </div>
-            
-              <div className="  text-center p-5 font-[300] ">
-                DigitalResume 
-                hgjnmrb 
-              </div>
-            
-              <div className="  text-center p-5 font-[300] ">
-                DigitalResume 
-                hgjnmrb 
-              </div>
-            
-              <div className="  text-center p-5 font-[300] ">
-                DigitalResume 
-                hgjnmrb 
-              </div>
-            
+              <DigitalSkills/>  
+                    
 
            </section>
            <a
@@ -91,13 +60,13 @@ const DigitalResume = () => {
         download=""
         target='_blank'
         className=" pdf-download-btn text-white text-md absolute top-[1%] left-[1.5%] cursor-pointer">
-            <IoCloudDownloadOutline />
-            {/* <PiDownloadBold/> */}
+            {/* <IoCloudDownloadOutline /> */}
+            <PiDownloadBold/>
          </a>
 
            <FaRegTimesCircle
            className='
-            pdf-download-btn text-[#ff7ea3] text-md absolute top-[2%] left-[97%] cursor-pointer'
+            pdf-download-btn text-md absolute top-[2%] left-[97%] cursor-pointer'
            role='button'
               onClick={()=>{
             dgresume.classList.remove('prod')
