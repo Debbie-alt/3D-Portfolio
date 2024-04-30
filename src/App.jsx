@@ -6,6 +6,9 @@ import AboutMe from "./AboutMe/AboutMe";
 import Projects from "./Projects/Projects";
 import SimpleSlider from "./ProjectCarousel";
 import whistle from './assets/sound-effect-twinkle.mp3'
+import Welcome from "./Welcome";
+import Testslider from "./testslider";
+
 
 function App() {
   const [mode, setMode] = useState();
@@ -38,11 +41,14 @@ function App() {
       <main className=" flex flex-col" id={mode}>
 
         <Routes>
-          <Route path="/" element={<Homepage mode={mode} />} />
+          <Route path="/" element={<Welcome/>} />
+          <Route path="/home" element={<Homepage mode={mode} />} />
           <Route path="/e" element={<AboutMe />} />
           <Route path="/new" element={<Taskbar />} />
          <Route path="/projs" element={<Projects />}></Route>
          <Route path="/projects" element={<SimpleSlider/>}></Route>
+         <Route path="/test" element={<Testslider/>}></Route>
+
         </Routes>
         
         <Taskbar mode={mode} toggleMode={toggleMode} />

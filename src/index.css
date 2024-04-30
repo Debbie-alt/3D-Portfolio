@@ -229,3 +229,120 @@ ul{
 #light .exp blockquote{
   color: #bd1053;
 }
+
+.welcome-page h1{
+  transform: skew(0deg) ;
+  font-weight: 700;
+  color: #eb6389;
+  font-size: 5.2em;
+  text-shadow:
+    10px 50px 20px rgb(197, 71, 134),
+    1px -2px 1px rgb(165, 25, 74),
+    1px -2px 1px rgb(165, 25, 74),
+    1px -3px 1px rgb(165, 25, 74),
+    1px -3px 1px rgb(165, 25, 74),
+    1px -3px 1px rgb(165, 25, 74),
+    1px -4px 1px rgb(165, 25, 74),
+    1px -5px 1px rgb(165, 25, 74),
+    0 0 2px #ffffff, 0 0 4px #ffffff, 0 0 6px #ffffff,
+    1px -6px 1px rgb(165, 25, 74),
+    1px -7px 1px rgb(165, 25, 74),
+    1px -8px 1px rgb(165, 25, 74),
+    1px -9px 1px rgb(165, 25, 74),
+    1px -10px 1px rgb(165, 25, 74),
+    1px -11px 1px rgb(165, 25, 74),
+    1px -12px 1px rgb(165, 25, 74),
+    1px -13px;
+}
+.welcome-page .h-first{
+  animation-name: slide-in-out;
+  animation-duration: 1.4s;
+  animation-timing-function: ease-forwards;
+  animation-fill-mode: backwards;
+ left:3.5%;
+}
+@keyframes slide-in-out {
+  from {
+    left:-40%;
+  }
+  to{
+    left: 5%;
+    /* transform: translateX(50%); */
+  }
+  
+  
+}
+.welcome-page .to-text{
+  animation-name:bounce-in;
+  animation-duration: 1.8s;
+  animation-timing-function: ease-forwards;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  left: 37%;
+  top: 30%;
+  opacity: 0;
+  
+
+ 
+}
+@keyframes bounce-in {
+  0% {
+    top: -50%;
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+  70% {
+    top: 30%;
+    opacity: 1;
+    transform: translateY(40px);
+  }
+  100% {
+    top: 30%;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.welcome-page .name {
+  animation-name: slide-left;
+  animation-duration: 1.2s;
+  animation-timing-function: ease-forwards;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  left:55%;
+  opacity:0;
+ 
+}
+@keyframes slide-left {
+  from{
+      left:120%;
+      opacity:0;
+  }
+  to{
+    left: 55%;
+    opacity: 1;
+  }
+
+}
+
+.welcome-page .folio {
+  animation-name: slide-up;
+  animation-duration: 1.2s;
+  animation-timing-function: ease-forwards;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+
+  opacity:0;
+ 
+}
+@keyframes slide-up {
+  from{
+      bottom:120%;
+      opacity:0;
+  }
+  to{
+    bottom: 10%;
+    opacity: 1;
+  }
+
+}

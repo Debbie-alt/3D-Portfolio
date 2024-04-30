@@ -1,6 +1,6 @@
 import React, { forwardRef, useEffect } from "react";
 import whatsapp from '../assets/socialicons/wassap.png'
-import linktree from '../assets/linktree.svg'
+import linktree from '../assets/socialicons/linkitree.png'
 import linkedin from '../assets/linkedin3.png'
 
 const MySocials = React.forwardRef((props, ref) => { 
