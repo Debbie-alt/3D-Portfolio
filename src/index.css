@@ -259,6 +259,7 @@ ul{
   animation-duration: 1.4s;
   animation-timing-function: ease-forwards;
   animation-fill-mode: backwards;
+  animation-delay: 1.2s;
  left:3.5%;
 }
 @keyframes slide-in-out {
@@ -346,3 +347,4 @@ ul{
   }
 
 }
+

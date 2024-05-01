@@ -2,7 +2,6 @@ import React from 'react'
 import image from '../assets/phone_media.png'
 import Tilt from 'react-parallax-tilt';
 import { useState } from 'react';
-import SocialContent from './SocialContent';
 import MySocials from './MySocials';
 
 

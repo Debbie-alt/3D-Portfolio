@@ -1,7 +1,6 @@
 import { useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import {useNavigate} from "react-router-dom"
-import Projects from "../Projects/Projects";
 import { FaArrowCircleRight } from "react-icons/fa";
 
  function Scroll() {

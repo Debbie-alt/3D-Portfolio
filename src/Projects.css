@@ -1,4 +1,4 @@
-.carousel-page::before{
+/* .carousel-page::before{
       content: '';
       position: absolute;
       top:0;
@@ -7,8 +7,8 @@
       height:100%;
       background: linear-gradient(#f00, #f0f);
       clip-path: circle(30% at right 70%);
-}
-.carousel-page::after{
+} */
+/* .carousel-page::after{
       content: '';
       position: absolute;
       top:0;
@@ -19,7 +19,7 @@
       clip-path: circle(30% at 10% 0%);
       z-index: 0;
       backdrop-filter: blur(15px);
-}
+} */
 .cardContainer{
       position: absolute;
       display: flex;

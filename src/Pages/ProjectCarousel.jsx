@@ -2,14 +2,12 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./Projects/Projects.css";
-import Smarta from "./Components/ProjectsComponents/Smarta.jsx";
-import Movie from "./Components/ProjectsComponents/Movie.jsx";
-import Deplay from "./Components/ProjectsComponents/Deplay.jsx";
+import "../Projects.css"
+import Smarta from "../Components/ProjectsComponents/Smarta.jsx";
+import Movie from "../Components/ProjectsComponents/Movie.jsx";
+import Deplay from "../Components/ProjectsComponents/Deplay.jsx";
 import Tilt from 'react-parallax-tilt';
-import {Link} from "react-router-dom"
-import { FaArrowAltCircleDown } from "react-icons/fa";
-
+import { motion } from "framer-motion";
 
 
 export default class SimpleSlider extends Component {
@@ -25,7 +23,11 @@ export default class SimpleSlider extends Component {
     };
 
     return (
-     <div className="w-screen  px-[5vw] py-3 space-y-4 carousel-page  relative" id="slider">
+     <motion.div className="w-screen  px-[5vw] py-3 space-y-4 carousel-page  relative" 
+     initial={{width: 0}}
+     animate={{width:window.innerWidth}}
+     exit={{x: window.innerWidth}}
+     id="slider">
         <h1 className="font-serif italic bg-gradient-to-tl from-purple-200 to-pink-700 text-transparent bg-clip-text text-center   text-3xl z-10 ">
           My favorite projects
         </h1>
@@ -47,7 +49,7 @@ export default class SimpleSlider extends Component {
           <Smarta />
         </Slider>
         {/* </Tilt> */}
-      </div>
+      </motion.div>
 
     );
   }
