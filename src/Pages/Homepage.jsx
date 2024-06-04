@@ -3,7 +3,6 @@ import Resume from "../Components/Icons/Resume";
 import Myself from "../AboutMe/Myself";
 import Mail from "../Components/Icons/Mail";
 import Linktree from "../AboutMe/Linktree";
-import AboutMe from "../AboutMe/AboutMe";
 import Social from "../AboutMe/Social";
 import { useState, useEffect } from "react";
 import Github from "../Components/Icons/Github";
@@ -12,8 +11,7 @@ import DigitalResume from "../AboutMe/DigitalResume";
 import Scroll from "../Components/ScrollDown";
 import Typed from 'typed.js';
 import { motion, AnimatePresence } from "framer-motion";
-import plop from '../assets/plopsound.mp3'
-
+import plop from '../assets/ploptrimmed.mp3'
 
 
 
@@ -68,7 +66,8 @@ const Homepage = ({ mode }) => {
         <motion.div className=""
         initial={{width: 0}}
         animate={{width: "80vw"}}
-        exit={{x:window.innerWidth}} >
+         transition={{opacity:0.5}}
+        exit={{rotateY:180, duration:1}} >
         
         <div className="wall"></div>
         <div className="flex flex-col space-y-6  -mt-48  mx-5">
@@ -80,6 +79,7 @@ const Homepage = ({ mode }) => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{
               duration: 0.3,
+              delay:0.5,
               ease: [0, 0.71, 0.2, 1.01],
               scale: {
                 type: "spring",
@@ -114,9 +114,6 @@ const Homepage = ({ mode }) => {
             >
             <Myself />
             </motion.div>
-
-               <AboutMe />
-
             <motion.div
             className="box"
             initial={{ opacity: 0, scale: 0.5 }}
@@ -148,8 +145,7 @@ const Homepage = ({ mode }) => {
                   type: "spring",
                   damping: 5,
                   stiffness: 100,
-                  restDelta: 0.001}}}
-            >
+                  restDelta: 0.001}}}>
              <Mail />
              
             </motion.div>

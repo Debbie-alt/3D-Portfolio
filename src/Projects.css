@@ -1,45 +1,72 @@
-/* .carousel-page::before{
-      content: '';
-      position: absolute;
-      top:0;
-      left:0;
-      width: 100%;
-      height:100%;
-      background: linear-gradient(#f00, #f0f);
-      clip-path: circle(30% at right 70%);
-} */
-/* .carousel-page::after{
-      content: '';
-      position: absolute;
-      top:0;
-      left:0;
-      width:70%;
-      height:70%;
-      background: linear-gradient(rgb(244, 69, 69), #f0f, rgb(255, 255, 255, 0.1));
-      clip-path: circle(30% at 10% 0%);
-      z-index: 0;
-      backdrop-filter: blur(15px);
-} */
 .cardContainer{
-      position: absolute;
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-      z-index: 10 !important;
+      position: relative;
+      height: 450px;
+      width: 600px;
 }
 .cardContainer .card{
-      position: relative;
-      background: rgba(255, 255, 255, 0.1);
-      overflow: hidden;
-      box-shadow: 20px 20px, 50px rgba(0, 0, 0, 0, 0.5);
       display: flex;
-      justify-content: center;
-      align-items: center;
-      border-top: 1px solid rgba(228, 55, 133, 0.5);
-      border-top: 1px solid rgba(255, 255, 255, 0.5);
-      backdrop-filter: blur(5px);
+      border: 30px solid transparent;
+      z-index: 1;   
+}
+ .cardContainer .card{
+      position: absolute;
+      overflow: hidden; 
+      /* display: flex; */
+      /* justify-content: center; */
+      /* align-items: center; */
+      /* border-top: 1px solid rgba(255, 255, 255, 0.5); */
+      border-image-source: url(./assets/ProjectPhotos/lcdbezel.png);
+      /* border-image-width: auto; */
+      border-image-outset: 0;
+      border-image-slice: 18 fill;
+      box-shadow: 0;
+      overflow: hidden;
+      height:100%;
+      width: 100%;
+      object-fit: contain
+;
+
+} .cardContainer  .card img{
+      z-index: 3 !important;
+      height: 66%;
+      margin-top: 38px;  
+      position: absolute;
+      cursor: pointer;
+}
+.demobtn{
+      z-index: 5;
+      position: absolute;
+}
+.bezelanimation1{
+      animation: crt 2s ease-in-out infinite alternate-reverse ;
+      position: absolute;
+      z-index: 4;
+      width: 100%;
+      height:1px;
+      background-color: gray;
 
 }
-.cardContainer .card:hover{
-     transform: translateZ(20px);
+@keyframes crt {
+      from {
+            top: 10%;
+      }
+   to{
+      top: 76%;
+      }   
+}
+.bezelanimation2{
+      animation: crt 3s ease-in-out infinite alternate ;
+      position: absolute;
+      z-index: 4;
+      width: 100%;
+      height:1px;
+      background-color: rgb(249, 161, 230);
+}
+@keyframes crt {
+      from {
+            top: 70%;
+      }
+   to{
+            top: 13%;
+      }  
 }

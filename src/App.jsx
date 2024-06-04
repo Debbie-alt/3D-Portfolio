@@ -3,14 +3,12 @@ import Taskbar from "./Components/Taskbar";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import Homepage from "./Pages/Homepage";
 import SimpleSlider from "./Pages/ProjectCarousel";
-import whistle from './assets/sound-effect-twinkle.mp3'
 import Welcome from "./Pages/Welcome";
-import Testslider from "./Pages/Testslider";
 import { motion, AnimatePresence } from "framer-motion";
 import plop from './assets/happy-pop.mp3'
 
 function App() {
-  const [mode, setMode] = useState();
+  const [mode, setMode] = useState("dark");
   const location = useLocation();
 
   const toggleMode = () => {
@@ -36,11 +34,15 @@ function App() {
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Welcome/>} />
           <Route path="/home" element={<Homepage mode={mode} />} />
-          <Route path="/h" element={<Testslider/>} />
          <Route path="/projects" element={<SimpleSlider/>}></Route>
         </Routes>
       </AnimatePresence>
-      <Taskbar mode={mode} toggleMode={toggleMode} />
+    
+           {location.pathname !== '/' ? (
+              <Taskbar mode={mode} toggleMode={toggleMode} />  ): null}
+        
+         
+        
       </main>
     </>
   );

@@ -28,7 +28,7 @@ const Deplay = () => {
           View Demo
         </button>
 
-        <div className="flex fixed bottom-8   space-x-5 rounded-full">
+        <div className="flex fixed bottom-8   space-x-5 ">
           {languages_icon.map((icons) => (
             <img
               src={icons.logo}

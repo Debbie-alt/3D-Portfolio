@@ -19,6 +19,10 @@
   -webkit-text-size-adjust: 100%;
   font-family: 'Courier New', Courier, monospace;
   font-weight: 488;
+  transition: background-color 1s color 1s;
+  animation: fadebg 0.3s ease-in-out 0  ;
+
+
 }
 ul{
   list-style:circle;
@@ -26,22 +30,32 @@ ul{
 
   *{
     font-family: 'Quicksand';
-  /* font-style: italic; */
+  
 }
 
 #light {
   background-color:#c0c0c3;
   color: black;
   height: 100vh;
+  animation: fadebg 0.3s ease-in-out 0  ;
 }
+
 #dark {
   background-color: rgb(23, 21, 21);
+  transition: background-color 0.3s color 0.3s;
   color: azure;
+  animation: fadebg 0.3s ease-in-out 0  
+}
+@keyframes fadebg {
+  0%{
+    opacity:0.7
+  }
+  100%{
+    opacity: 1;
+  }
 }
 #light .carousel-page{
-  /* background-color:#babec4; */
   color:black;
-  background: linear-gradient(to right, #a1a1a1, white, #8e8e8e);
 }
 #light .card{
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
@@ -174,30 +188,11 @@ ul{
 #dark ::-webkit-scrollbar-thumb:hover{
   background: linear-gradient(to bottom,    rgba(0, 0, 0, 0.2 ),  #c54b7a,   rgba(0, 0, 0, 0.2 ));
 }
-
-/* svg {
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-} */
-/* .container {
-  display: inline-block;
-  position: absolute;
-  width: 100%;
-  padding-bottom: 100%;
-  vertical-align: middle;
-  overflow: hidden;
-  top: 0;
-  left: 0;
-} */
 #dark .resume-header{
   background-color: rgba(0, 0, 0, 0.3);
 }
 .resume-header {
   background-color: rgba(0, 0, 0, 0.1);
-
 }
 
 .skills-section{
@@ -268,10 +263,7 @@ ul{
   }
   to{
     left: 5%;
-    /* transform: translateX(50%); */
-  }
-  
-  
+    }
 }
 .welcome-page .to-text{
   animation-name:bounce-in;
@@ -345,6 +337,22 @@ ul{
     bottom: 10%;
     opacity: 1;
   }
-
+}
+.s-icon-cont{
+  position: relative;
 }
 
+@keyframes moveIcon {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  50% {
+    top: 50%;
+    left: 50%;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}

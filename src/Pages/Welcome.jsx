@@ -20,42 +20,34 @@ const Welcome = () => {
         scrollHome("/home");
       };
       scrollIntoHome();
-    }, 4000);
+    }, 6000);
   });
   
-  
   return (
- 
         <motion.div
           className="welcome-page w-screen h-screen relative"
           style={backgroundStyle}
-          initial={{width: 0}}
-          animate={{width:window.innerWidth}}
-          exit={{x: window.innerWidth}}
-        >
+          initial={{ opacity:0, width:"100%" }}
+          animate={{width:window.innerWidth, opacity:1}}
+          exit={{x: window.innerWidth, opacity:0}}>
           <h1 className="h-first absolute" >
             Welcome
           </h1>
-
-          <h1
-            className="text-center to-text absolute">
-            To
-          </h1>
+          <h1 className="text-center to-text absolute"> To </h1>
           <h1 className="mt-16 text-center bottom-40 absolute name">
             Funmi's
           </h1>
           <h1 className="mt-16 text-center bottom-14 absolute right-10 folio">
             Portfolio
           </h1>
-  
+{/*   
           <button
             className="cursor-pointer"
             onClick={() => {
               setBg(bg === darkstar ? lightstar : darkstar);
-            }}
-          >
-            Change color
-          </button>
+            }}>
+           c
+          </button> */}
         </motion.div>
        
     

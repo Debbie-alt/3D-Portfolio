@@ -4,11 +4,10 @@ import { Link } from "react-router-dom/dist";
 import Tilt from "react-parallax-tilt";
 import { useState, useEffect } from "react";
 import linkedin2 from "../assets/linkedin2.png";
-import linkedin3 from "../assets/linkedin3.png";
 
 const Linktree = () => {
   const [icon, setIcon] = useState(linkedin);
-  const iconList  =[linkedin, linkedin2,  linkedin3]
+  const iconList  =[linkedin, linkedin2,]
 
   useEffect(() => {
     //    setInterval(() => {

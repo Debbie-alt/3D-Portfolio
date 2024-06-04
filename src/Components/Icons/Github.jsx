@@ -19,13 +19,9 @@ const Github = () => {
         src={icon}
         alt="Resume link"
         id="myResume"
-        className=" w-8 md:w-14"
-        role="button"
-
-      />
-
+        className=" w-8 md:w-14 hover:w-12"
+        role="button" />
      </a>
-     
       <label htmlFor="myResume" className=' text-sm'>Github</label>
     </div>
      </Tilt>

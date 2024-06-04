@@ -1,19 +1,47 @@
 import React from 'react'
 import mov from '../../assets/ProjectPhotos/saasphoto.jpg'
+import Tilt from 'react-parallax-tilt';
+import { useState } from 'react';
+import ProjectDetails from '../ProjectDetails';
+
 
 const Movie = () => {
+  const [open, setOpen] = useState('hidden')
   return (
-      <section className="cardContainer relative  w-full flex justify-center  px-10  h-[75vh]  ">
-               
-      <figure className="card w-full object-cover h-[70vh]  flex flex-col  rounded-md">
-        <img src={mov} alt=""  />
-  
-
-       {/* <button className="text-white bg-pink-500  font-serif  italic p-2 hover:opacity-80 rounded-sm">
-      View Demo
-    </button> */}
-       </figure>
-</section>  )
+  <>
+    {/* <Tilt
+    className="parallax-effect-glare-scale"
+    perspective={1900}
+    tiltEnable={true}
+    scale={1}
+    gyroscope={true}
+    transitionSpeed={500}
+  > */}
+   
+   <div className="flex items-center space-x-14 ">
+       <h1 className="font-bold text-3xl font-serif "  onMouseOver={()=>{
+          alert('yes')
+        }}>GearLink</h1>
+    <section className="cardContainer mx-auto">
+      <figure className="card  rounded-md">
+        <div className="bezelanimation1" />
+        <div className="bezelanimation2" />
+        <img src={mov} alt="" className=" w-screen block" onMouseEnter={()=>{
+          setOpen('flex')
+        }} 
+        
+        
+        />
+      </figure>
+      <a href="https://gearlink.vercel.app" target='blank' className="text-white bg-gradient-to-tr from-black via-pink-400 to-black rounded-full font-serif  italic p-2 hover:opacity-70 cursor-pointer demobtn">
+        View Demo
+      </a>
+    </section>
+    </div>
+    <ProjectDetails open={open}/>
+  {/* // </Tilt> */}
+  </>
+  )
 }
 
 export default Movie
