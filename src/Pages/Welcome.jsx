@@ -1,9 +1,7 @@
 import { useEffect, useState } from "react";
 import darkstar from "/public/starry.jfif"; // Corrected import statement
-import lightstar from "/public/whitestars.jfif";
 import { useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import transition from "../Transition"
 
 const Welcome = () => {
   const [bg, setBg] = useState(darkstar); // State variable for the background
@@ -54,4 +52,4 @@ const Welcome = () => {
   );
 };
 
-export default transition(Welcome);
+export default Welcome;

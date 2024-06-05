@@ -12,17 +12,10 @@ const Deplay = () => {
     { id: 3, logo: framermotionbg, alt: "framer_logo" }];
  
     return (
-    //   <Tilt
-    //   className="parallax-effect-glare-scale"
-    //   perspective={1900}
-    //   tiltEnable={true}
-    //   scale={1.02}
-    //   gyroscope={true}
-    //   transitionSpeed= {200}
-    // >
+    
     <section className="cardContainer relative w-full flex justify-center  px-10  h-[75vh]  ">
      
-      <figure className="card w-full h-[70vh]   flex flex-col   rounded-md">
+      <figure className="card w-full h-[70vh]   flex flex-col   rounded-md shadow-xl shadow-black">
        <img src={wina} alt="" className=" w-full  top-0 absolute" />
         <button className="text-white bg-pink-500  font-serif  italic p-2 hover:opacity-80 rounded-xl">
           View Demo
@@ -39,7 +32,7 @@ const Deplay = () => {
         </div>
       </figure>
     </section>
-    // </Tilt>
+    
   );
 };
 

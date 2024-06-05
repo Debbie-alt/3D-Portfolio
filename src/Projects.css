@@ -1,35 +1,38 @@
 .cardContainer{
       position: relative;
-      height: 450px;
+      height:60vh;
       width: 600px;
+      border: 0;
+      box-shadow: 0;
+      background-color: black;
 }
 .cardContainer .card{
       display: flex;
-      border: 30px solid transparent;
+      border: 30px;
       z-index: 1;   
 }
  .cardContainer .card{
       position: absolute;
-      overflow: hidden; 
-      /* display: flex; */
-      /* justify-content: center; */
-      /* align-items: center; */
-      /* border-top: 1px solid rgba(255, 255, 255, 0.5); */
+      overflow: hidden;
       border-image-source: url(./assets/ProjectPhotos/lcdbezel.png);
       /* border-image-width: auto; */
       border-image-outset: 0;
       border-image-slice: 18 fill;
-      box-shadow: 0;
+      /* box-shadow: 0; */
       overflow: hidden;
       height:100%;
       width: 100%;
       object-fit: contain
-;
+;}
 
-} .cardContainer  .card img{
+#dark .pj-pag{
+  background-color: #222222;
+  box-shadow: 0px 3px 6px 4px pink;
+}
+.cardContainer  .card img{
       z-index: 3 !important;
       height: 66%;
-      margin-top: 38px;  
+      margin-top: 30px;  
       position: absolute;
       cursor: pointer;
 }

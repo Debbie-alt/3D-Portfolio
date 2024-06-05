@@ -18,11 +18,11 @@ const Movie = () => {
     transitionSpeed={500}
   > */}
    
-   <div className="flex items-center space-x-14 ">
+   <div className=" pj-pag flex items-center space-x-14 shadow-2xl shadow-black ">
        <h1 className="font-bold text-3xl font-serif "  onMouseOver={()=>{
           alert('yes')
         }}>GearLink</h1>
-    <section className="cardContainer mx-auto">
+    <section className="cardContainer mx-auto shadow-2xl shadow-[#333]">
       <figure className="card  rounded-md">
         <div className="bezelanimation1" />
         <div className="bezelanimation2" />
@@ -38,7 +38,7 @@ const Movie = () => {
       </a>
     </section>
     </div>
-    <ProjectDetails open={open}/>
+    {/* <ProjectDetails open={open}/> */}
   {/* // </Tilt> */}
   </>
   )
