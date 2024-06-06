@@ -1,5 +1,5 @@
 import React from "react";
-import mov from "../../assets/ProjectPhotos/movattis.jpg";
+import mov from "../../assets/ProjectPhotos/saasphoto.jpg";
 import Tilt from "react-parallax-tilt";
 
 const Smarta = () => {

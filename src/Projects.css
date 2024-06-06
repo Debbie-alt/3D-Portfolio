@@ -5,6 +5,7 @@
       border: 0;
       box-shadow: 0;
       background-color: black;
+      border-radius: 20px;
 }
 .cardContainer .card{
       display: flex;
@@ -14,10 +15,7 @@
  .cardContainer .card{
       position: absolute;
       overflow: hidden;
-      border-image-source: url(./assets/ProjectPhotos/lcdbezel.png);
-      /* border-image-width: auto; */
-      border-image-outset: 0;
-      border-image-slice: 18 fill;
+
       /* box-shadow: 0; */
       overflow: hidden;
       height:100%;
@@ -28,17 +26,18 @@
 #dark .pj-pag{
   background-color: #222222;
   box-shadow: 0px 3px 6px 4px pink;
+
 }
 .cardContainer  .card img{
       z-index: 3 !important;
-      height: 66%;
-      margin-top: 30px;  
+      height: auto;
+      object-fit: cover;
+      /* margin-top: 30px;   */
       position: absolute;
       cursor: pointer;
 }
 .demobtn{
       z-index: 5;
-      position: absolute;
 }
 .bezelanimation1{
       animation: crt 2s ease-in-out infinite alternate-reverse ;
