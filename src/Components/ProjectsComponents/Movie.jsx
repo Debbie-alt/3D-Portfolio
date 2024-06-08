@@ -12,19 +12,18 @@ const Smarta = () => {
       gyroscope={true}
       transitionSpeed={500}
     >
-      <div className=" pj-pag flex h-[80vh] items-center space-x-14  shadow-2xl shadow-black ">
-         <h1 className="font-bold text-3xl font-serif italic mx-3 ">Movatti </h1>
+      <div className=" pj-pag  flex h-[80vh] justify-center items-center   shadow-2xl shadow-black ">
+         <h1 className="font-bold text-2xl font-serif italic mx-5 ">GearLink</h1>
       <section className="cardContainer mx-auto shadow-2xl shadow-black">
         <figure className="card  rounded-md ">
           <div className="bezelanimation1" />
           <div className="bezelanimation2" />
-          <img src={mov} alt="" className="w-screen block" />
+          <img src={mov} alt="" className="w-screen block " />
         </figure>
-        
-      </section>
-      <a href="https://movatti.vercel.app" target="blank" className=" text-white bg-gradient-to-tr from-black via-pink-400 to-black rounded-full font-serif  italic p-2 hover:opacity-70 cursor-pointer demobtn">
+        <a href="https://movatti.vercel.app" target="blank" className=" text-white bg-gradient-to-tr from-black via-pink-400 to-black rounded-full font-serif  italic p-2 hover:opacity-70 cursor-pointer demobtn ">
           View Demo
         </a>
+      </section>
       </div>
     </Tilt>
   );

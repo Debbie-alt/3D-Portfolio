@@ -26,7 +26,7 @@ const Taskbar = ({ mode, toggleMode }) => {
   return (
     <div>
 
-      <footer className=" taskbar text-xs md:text-sm bottom-[0px] fixed flex items-center justify-between px-5 md:px-20 bg-gradient-to-r from-neutral-800 via-pink-400 to-neutral-800 w-screen h-8  ">
+      <footer className=" taskbar text-[10px] md:text-sm bottom-[0px] fixed flex items-center justify-between px-5 md:px-20 bg-gradient-to-r from-neutral-800 via-pink-400 to-neutral-800 w-screen h-8  ">
         <p>FAYEMI FUNMILAYO, FRONTEND DEVELOPER</p>
         <div className="flex space-x-4">
           <p>{formattedTime}</p>

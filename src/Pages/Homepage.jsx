@@ -118,7 +118,7 @@ const Homepage = ({ mode }) => {
             className="box"
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{delay:0.7,
+            transition={{delay:0.5,
               duration: 0.4,
               ease: [0, 0.71, 0.2, 1.01],
               scale: {
@@ -194,10 +194,10 @@ const Homepage = ({ mode }) => {
         </motion.div>
         
         <figure
-          className={`bg-[#ffffff1a] font-serif opacity-200 ${textColor} backdrop:blur-lg animate-pulse rounded-xl text-center p-2 mr-10 top-[78%] fixed left-[86vw] text-[10px] `}
+          className={`bg-[#ffffff1a] w-[120px] font-serif opacity-200 ${textColor} backdrop:blur-lg animate-pulse rounded-xl text-center p-2 mr-10 bottom-[38px] py-3 fixed right-[0px] text-[10px] `}
         >
           {" "}
-          Don't like {mode} mode? Click on <br /> the icon!
+          Don't like {mode} mode? <br />  Click on the icon!
         </figure>
         <Scroll />
       </motion.div>

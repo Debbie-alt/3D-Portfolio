@@ -30,7 +30,7 @@
 }
 .cardContainer  .card img{
       z-index: 3 !important;
-      height: auto;
+      height: 90%;
       object-fit: cover;
       /* margin-top: 30px;   */
       position: absolute;
@@ -38,6 +38,9 @@
 }
 .demobtn{
       z-index: 5;
+      position: absolute;
+      bottom: 20px;
+      left: 40%;
 }
 .bezelanimation1{
       animation: crt 2s ease-in-out infinite alternate-reverse ;

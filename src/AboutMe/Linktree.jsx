@@ -2,23 +2,8 @@ import React from "react";
 import linkedin from "../assets/linkedin1.png";
 import { Link } from "react-router-dom/dist";
 import Tilt from "react-parallax-tilt";
-import { useState, useEffect } from "react";
-import linkedin2 from "../assets/linkedin2.png";
 
 const Linktree = () => {
-  const [icon, setIcon] = useState(linkedin);
-  const iconList  =[linkedin, linkedin2,]
-
-  useEffect(() => {
-    //    setInterval(() => {
-    //        iconList.forEach(i => {
-    //         setIcon(i)
-          
-    //       })
-    // }, 9000);
-
-    // return () => clearInterval(intervalid);
-  },  );
   
   return (
     <Tilt
@@ -32,12 +17,11 @@ const Linktree = () => {
       <div className="">
         <Link to="https://linktr.ee/fayemi.funmilayo55" target="blank">
           <img
-            src={icon}
+            src={linkedin}
             alt="Resume link"
             id="myResume"
             className="w-8 md:w-14"
             role="button"
-            // onMouseEnter={changeicon}
           />
         </Link>
 

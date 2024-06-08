@@ -20,8 +20,8 @@ const MySocials = React.forwardRef((props, ref) => {
     <>
       <section
           // ref={ref}
-        className=" Aboutme rounded-xl shadow-pink-300 left-[13.5%] h-[40%] lg:h-[50vh]   relative shadow-xl lg:top-10 
-          w-full md:w-[43vw]  hidden  flex-col "
+        className=" Aboutme rounded-xl shadow-pink-300 left-[13.5%] py-2.5   relative shadow-xl lg:top-10 
+          w-full md:w-[500px]  hidden  flex-col "
         id="socials">
           
           <section>
@@ -37,10 +37,10 @@ const MySocials = React.forwardRef((props, ref) => {
               <img src={whatsapp} alt="whaatsapp link icon"  width='70' className="mx-auto -mt-5 animate-bo iconone animate-bounce hover:w-[90px] " />
               </a>
               <a width='55' >
-              <img src={linktree} alt="linktree link icon"  width='60' className="mx-auto mt-3 animate-bounce hover:w-[40px]"  />
+              <img src={linktree} alt="linktree link icon"  width='50' className="mx-auto mt-3 animate-bounce hover:w-[80px]"  />
               </a>
               <a width='55' >
-              <img src={linkedin} alt="linkedin link icon"  width='100' className=" hover:w-[120px] mx-auto animate-pulse"  />
+              <img src={linkedin} alt="linkedin link icon"  width='100' className=" hover:w-[140px] mx-auto animate-pulse"  />
               </a>
 
               <a width='55' >
