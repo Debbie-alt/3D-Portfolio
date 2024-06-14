@@ -11,18 +11,18 @@ import { motion } from "framer-motion";
 export default class SimpleSlider extends Component {
   render() {
     const settings = {
-      fade: true,
+      // fade: true,
       infinite: true,
-      speed: 500,
+      speed: 900,
       slidesToShow: 1,
       slidesToScroll: 1,
       initialSlide: 1,
-      centerMode: true,
+      // centerMode: true,
     };
 
     return (
       <motion.div
-        className="w-screen  px-[5vw] py-3 space-y-4 carousel-page  relative"
+        className="w-screen  px-5 md:px-[3vw] py-3 space-y-4 carousel-page  relative "
         exit={{width:0}}
         transition={{  duration: 0.5 }}
         id="slider"

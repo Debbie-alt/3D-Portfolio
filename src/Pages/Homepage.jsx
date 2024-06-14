@@ -66,7 +66,7 @@ const Homepage = ({ mode }) => {
         <motion.div className=""
         initial={{width: 0}}
         animate={{width: "80vw"}}
-         transition={{opacity:0.5}}
+         transition={{opacity:0}}
         exit={{rotateY:180, duration:1}} >
         
         <div className="wall"></div>

@@ -10,9 +10,9 @@ const Smarta = () => {
       tiltEnable={true}
       scale={1}
       gyroscope={true}
-      transitionSpeed={500}
-    >
-      <div className=" pj-pag  flex h-[80vh] justify-center items-center   shadow-2xl shadow-black ">
+      transitionSpeed={500}>
+        
+      <div className=" pj-pag flex  flex-col md:flex-row h-[70vh] md:h-[80vh] justify-center items-center   shadow-2xl shadow-black ">
          <h1 className="font-bold text-2xl font-serif italic mx-5 ">GearLink</h1>
       <section className="cardContainer mx-auto shadow-2xl shadow-black">
         <figure className="card  rounded-md ">

@@ -75,3 +75,20 @@
             top: 13%;
       }  
 }
+@media (max-width:768px) {
+   .pj-pag{
+      width: 90vw;
+   }    
+   .cardContainer  .card img{
+      height: 90%;
+
+   }
+   .cardContainer{
+      width: 75vw;
+      height: 60%;
+   }
+   .demobtn{
+      top: 100%;
+      left: 30%;
+   }
+}

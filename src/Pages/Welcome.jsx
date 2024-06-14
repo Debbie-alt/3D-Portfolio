@@ -28,7 +28,7 @@ const Welcome = () => {
           initial={{ opacity:0, width:"100%" }}
           animate={{width:window.innerWidth, opacity:1}}
           exit={{x: window.innerWidth, opacity:0}}>
-          <h1 className="h-first absolute" >
+          <h1 className="h-first absolute " >
             Welcome
           </h1>
           <h1 className="text-center to-text absolute"> To </h1>
