@@ -12,7 +12,7 @@
   color: rgba(255, 255, 255, 0.87);
   background-color:rgb(23, 21, 21);
   font-synthesis: none;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -127,9 +127,9 @@ box-shadow: 2px 20px 25px -5px #333 ;
 .wall {
   padding: 20px;
   padding-left: 20px;
-  transform: perspective(104px) rotateY(25deg) rotateX(0deg) translateZ(220px);
+  transform: perspective(104px) rotateY(25deg) rotateX(0deg) translateZ(240px);
   box-shadow: 0px 4px 6px rgba(192, 10, 10, 0.2);
-  width: 2;
+  width:100%;
   box-sizing: border-box;
   height: 200px;
   position: relative;
@@ -139,18 +139,19 @@ box-shadow: 2px 20px 25px -5px #333 ;
     width: 10px;
     background-color: red;
     position: absolute;
+    z-index: 10;
 
   }
 
 .floor {
-  width: 80%;
-  margin-left: 44%;
-  height: 100px;
+  width: 60%;
+  margin-left: 43%;
+  height: 200px;
   background: linear-gradient(35deg, rgba(18, 17, 17, 0.2) 0%, rgba(24, 23, 23, 0.4) 100%);
   position: absolute;
-  top: 185px;
+  top: 40%;
   transform-origin: top;
-  transform: perspective(0px) rotateX(40deg) translateZ(-28px) translateY(0px);
+  transform: skew(-60deg) perspective(3px) rotateX(38deg) translateZ(-38px) translateY(0px);
   box-shadow: -15px  -50px 50px rgb(200, 76, 96);
   border-radius: 20px;
   backdrop-filter: blur(5px);
@@ -208,13 +209,16 @@ box-shadow: 2px 20px 25px -5px #333 ;
 #light .skills-section{
   background-color: rgb(0, 0, 0, 0.1);
 }
+
 .hr{
   background-color: red;
 }
+
 .skills-section figure {
   background-color: rgba(19, 19, 255, 0.376);
   width: fit-content;
 }
+
 .exp figure {
   background-color: rgba(19, 19, 255, 0.376);
   width: fit-content;
@@ -372,13 +376,13 @@ box-shadow: 2px 20px 25px -5px #333 ;
  }
  .floor{
   /* background-color: red; */
-  width: 100%;
-  margin-left:70px;
+  width: 120%;
+  margin-left:50px;
   height: 200px;
   position: absolute;
-  top: 270px;
+  top: 50%;
   /* transform-origin: top; */
-  transform: perspective(-200px) rotateX(70deg) translateZ(-28px) translateY(0px);
+  transform: perspective(-200px) rotateX(40deg) translateZ(-28px) translateY(0px);
   /* box-shadow: -15px  -5px 5px rgb(200, 76, 96); */
   border-radius: 20px;
   backdrop-filter: blur(5px);
@@ -387,6 +391,27 @@ box-shadow: 2px 20px 25px -5px #333 ;
   background-color: red;
   height: 100vw;
   width: 50px;
+}
+.text{
+  top:50%;
+  left:10%;
+  text-shadow:
+  10px 10px 20px rgb(197, 71, 134),
+  1px -2px 1px rgb(165, 25, 74),
+  1px -2px 1px rgb(165, 25, 74),
+  1px -3px 1px rgb(165, 25, 74),
+  1px -3px 1px rgb(165, 25, 74),
+  1px -3px 1px rgb(165, 25, 74),
+  1px -4px 1px rgb(165, 25, 74),
+  1px -5px 1px rgb(165, 25, 74),
+  0 0 2px #ffffff, 0 0 4px #ffffff, 0 0 6px #ffffff,
+  1px -6px 1px rgb(165, 25, 74),
+  1px -7px 1px rgb(165, 25, 74),
+  1px -8px 1px rgb(165, 25, 74),
+  1px -9px 1px rgb(165, 25, 74),
+  1px -10px 1px rgb(165, 25, 74),
+  1px -11px 1px rgb(165, 25, 74),
+  1px -12px 1px rgb(165, 25, 74),
 }
  }
  

@@ -39,7 +39,7 @@ const Homepage = ({ mode }) => {
   React.useEffect(() => {
     if (elx.current) {
       const typed = new Typed(elx.current, {
-        strings: ['<span class="text animate-pulse tracking-tightest text-[2.2em] md:text-[3.7em]" style:"whiteSpace: nowrap,wordBreak: keep-all">FUNMIS PORTFOLIO</span>'
+        strings: ['<span class="text animate-pulse tracking-tightest text-[2.4em] md:text-[3.7em]" style:"whiteSpace: nowrap,wordBreak: keep-all">FUNMIS PORTFOLIO</span>'
       ],
         typeSpeed: 90,
         contentType: 'html', 
