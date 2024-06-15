@@ -15,17 +15,7 @@ function App() {
     setMode((current) => (current === "light" ? "dark" : "light"));
   };
   
-  useEffect(() => {
-    const clickHandler = () => {
-      const audio = new Audio(plop); 
-      audio.play(); 
-    };
-
-    document.addEventListener('click', clickHandler);
-    return () => {
-      document.removeEventListener('click', clickHandler); 
-     };
-  }, []); 
+ 
 
   return (
     <>
