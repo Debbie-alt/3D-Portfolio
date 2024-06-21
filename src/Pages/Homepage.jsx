@@ -66,11 +66,14 @@ const Homepage = ({ mode }) => {
         <motion.div className=""
         initial={{width: 0}}
         animate={{width: "80vw"}}
-         transition={{opacity:0}}
+         transition={{opacity:0,
+          ease: [0, 0.71, 0.2, 1.01],
+
+         }}
         exit={{rotateX:180, duration:1}} >
         
         <div className="wall"></div>
-        <div className="flex flex-col space-y-6  -mt-48  mx-5">
+        <div className="flex flex-col space-y-4  -mt-48  mx-5">
           <section className=" flex  space-x-12   py-7">
 
             <motion.div

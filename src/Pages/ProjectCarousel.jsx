@@ -13,7 +13,7 @@ export default class SimpleSlider extends Component {
     const settings = {
       // fade: true,
       infinite: true,
-      speed: 900,
+      speed: 700,
       slidesToShow: 1,
       slidesToScroll: 1,
       initialSlide: 1,

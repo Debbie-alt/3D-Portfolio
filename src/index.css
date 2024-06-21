@@ -129,7 +129,7 @@ box-shadow: 2px 20px 25px -5px #333 ;
   padding-left: 20px;
   transform: perspective(104px) rotateY(25deg) rotateX(0deg) translateZ(240px);
   box-shadow: 0px 4px 6px rgba(192, 10, 10, 0.2);
-  width:100%;
+  width:20%;
   box-sizing: border-box;
   height: 200px;
   position: relative;

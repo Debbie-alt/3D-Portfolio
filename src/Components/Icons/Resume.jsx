@@ -24,7 +24,7 @@ const Resume = () => {
         src={icon}
         alt="Resume link"
         id="myResume"
-        className="w-8 md:w-12  "
+        className="w-10 mt-2 md:w-12  "
         role="button"
 
         onClick={DisplayResume}

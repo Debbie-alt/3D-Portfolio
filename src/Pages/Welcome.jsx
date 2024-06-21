@@ -23,10 +23,16 @@ const Welcome = () => {
   
   return (
         <motion.div
-          className="welcome-page w-screen h-screen relative"
+          className="welcome-page w-screen h-screen relative box"
           style={backgroundStyle}
           initial={{ opacity:0, width:"100%" }}
           animate={{width:window.innerWidth, opacity:1}}
+         
+          transition={{
+            duration: 0.5,
+            ease: [0, 0.71, 0.2, 1.01],
+           
+          }}
           exit={{x: window.innerWidth, opacity:0}}>
           <h1 className="h-first absolute " >
             Welcome

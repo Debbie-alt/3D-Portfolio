@@ -21,7 +21,7 @@ const MySocials = React.forwardRef((props, ref) => {
       <section
           // ref={ref}
         className=" Aboutme rounded-xl shadow-pink-300 left-[-10%] md:left-[13.5%] py-0 md:py-2.5   relative shadow-xl top-[10%] lg:top-10 
-           w-[90vw] md:w-[500px]  hidden  flex-col "
+           w-[90vw] md:w-[550px]  hidden  flex-col px- "
         id="socials">
           
           <section>
@@ -29,30 +29,30 @@ const MySocials = React.forwardRef((props, ref) => {
            {/* <div className=" flex flex-col   w-full text-center  p-5 font-[300] "> */}
               <h1  className="font-serif italic  text-center text-xl mt-5  ">My Social Media </h1>
           
-              <div className="rounded-full mx-5 s-icon-cont  mt-10   w-[85%] flex flex-wrap  items-center ">
+              <div className=" mx-5 s-icon-cont  mt-10 space-x-7 md:space-x-0 justify-center  w-[85%] flex flex-wrap  items-center ">
               <a width='55' href="https://x.com/Funmi565" >
-              <img src={twitter} alt="twitter link icon"  width='60' className=" mx-auto -mt-5 animate-pulse  hover:w-[80px] whatsapp"  />
+              <img src={twitter} alt="twitter link icon"  className=" w-[60px] mx-auto -mt-5 animate-pulse  hover:w-[80px] whatsapp"  />
               </a>
               <a width='55' href="">
-              <img src={whatsapp} alt="whatsapp link icon"  width='70' className="mx-auto -mt-5 animate-bo iconone animate-bounce hover:w-[90px] " />
+              <img src={whatsapp} alt="whatsapp link icon"  className=" w-[100px] md:w-[70px] mx-auto -mt-5 animate-bo iconone animate-bounce hover:w-[90px] " />
               </a>
               <a width='55' href="https://linktr.ee/fayemi.funmilayo55"  >
-              <img src={linktree} alt="linktree link icon"  width='50' className="mx-auto mt-3 animate-bounce hover:w-[80px]"  />
+              <img src={linktree} alt="linktree link icon"  className=" w-[60px] md:w-[50px] mx-auto mt-3 animate-bounce hover:w-[70px]"  />
               </a>
-              <a width='55' href="https://" >
-              <img src={linkedin} alt="linkedin link icon"  width='100' className=" hover:w-[140px] mx-auto animate-pulse"  />
+              <a  href="https://" >
+              <img src={linkedin} alt="linkedin link icon"   className=" w-[95px] hover:w-[120px] mx-auto animate-pulse"  />
               </a>
 
               <a width='55' href="" target="_blank" >
-               <img src={discord} alt="discord link icon"  width='55' className="mx-auto  animate-bounce hover:animate-none hover:w-[80px] discord "  />
+               <img src={discord} alt="discord link icon"   className=" w-[70px] md:w-[55px] mx-auto  animate-bounce hover:animate-none hover:w-[80px] discord "  />
               </a>
-              <a width='55' >
-              <img src={instagram} alt="whaatsapp link icon"  width='75' className=" animate-pulse hover:w-[93px]  "  /> 
+              <a className=" p-0">
+              <img src={instagram} alt="whaatsapp link icon"  className="w-[120px] md:w-[80px] animate-pulse hover:w-[95px]  "  /> 
               </a>
               
               </div>    
 
-               <h1  className="font-serif italic  text-center text-2xl mt-5 ">Accounts </h1>
+               <h1  className=" hidden sm:block font-serif italic  text-center text-2xl mt-5 ">Accounts </h1>
           
           </section>
   
