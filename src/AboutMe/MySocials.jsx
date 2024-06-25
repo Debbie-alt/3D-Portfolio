@@ -39,14 +39,14 @@ const MySocials = React.forwardRef((props, ref) => {
               <a width='55' href="https://linktr.ee/fayemi.funmilayo55"  >
               <img src={linktree} alt="linktree link icon"  className=" w-[60px] md:w-[50px] mx-auto mt-3 animate-bounce hover:w-[70px]"  />
               </a>
-              <a  href="https://" >
+              <a  href="https://www.linkedin.com/in/funmilayo-fayemi-7112ab272/" >
               <img src={linkedin} alt="linkedin link icon"   className=" w-[95px] hover:w-[120px] mx-auto animate-pulse"  />
               </a>
 
               <a width='55' href="" target="_blank" >
                <img src={discord} alt="discord link icon"   className=" w-[70px] md:w-[55px] mx-auto  animate-bounce hover:animate-none hover:w-[80px] discord "  />
               </a>
-              <a className=" p-0">
+              <a href="" className=" p-0">
               <img src={instagram} alt="whaatsapp link icon"  className="w-[120px] md:w-[80px] animate-pulse hover:w-[95px]  "  /> 
               </a>
               
