@@ -19,7 +19,7 @@ const Resume = () => {
     transitionSpeed= {200}
   >
     <div className=" top-[0px] ">
-      {/* <a href="https://drive.google.com/file/d/1OIaz3Cyhr3qnuL9ieCkVW3V5cLBw2GMj/view?usp=drivesdk" download="Funmi's Resume" target="blank"> */}
+       <a href="https://drive.google.com/file/d/1UEp898jYNTJCkmJf6BMxCrq4J_Ndl_qY/view?usp=drive_link" download="Funmi's Resume" target="blank">
       <img
         src={icon}
         alt="Resume link"
@@ -29,7 +29,7 @@ const Resume = () => {
 
         onClick={DisplayResume}
           />
-      {/* </a> */}
+      </a>
       <label htmlFor="myResume" className=" tracking-tighter">Resume</label>
 
   
