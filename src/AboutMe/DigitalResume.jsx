@@ -1,85 +1,110 @@
-import React from 'react'
-import myphoto from '/myphoto.jpg'
-import { FaRegTimesCircle } from "react-icons/fa";
-import { IoCloudDownloadOutline } from "react-icons/io5";
-import { PiDownloadBold } from "react-icons/pi";
-import DigitalSkills from './DigitalSkills';
-
-
-
+import React from "react";
+import { FaPhoneAlt, FaEnvelope, FaLinkedin, FaGithub, FaMapMarkerAlt } from "react-icons/fa";
 
 const DigitalResume = () => {
+  return (
+    <div  className=" digitalresume Aboutme 
+    border-2 border-transparent left-0  h-[70%]
+    lg:h-[90vh]  relative shadow-xl lg:top-2 
+    w-[90vw] md:w-[70%] rounded-md  hidden "
+    id="dgresume">       
 
+      <header className="space-y-2 flex flex-col items-center pt-8">
+        <div>
+          <h1 className="text-center font-semibold text-3xl font-serif">
+            FUNMILAYO FAYEMI
+          </h1>
+          <p className="text-center  text-lg font-serif mt-1 mb-1">
+            Frontend Developer and Software Engineer
+          </p>
+        </div>
 
- 
-    const divStyle = {
-      width: '300px',
-      height: '150px',
-      backgroundColor: '#6B7280', // Gray color
-      clipPath: 'url(#wave)',
-    };
-  
-    return (
-    <section   
-          className=" digitalresume Aboutme 
-          border-2 border-transparent left-0  h-[70%]
-          lg:h-[90vh]  relative shadow-xl lg:top-2 
-          w-[90vw] md:w-[70%] rounded-md  hidden"
-          id="dgresume">       
-          <section className="w-full flex flex-col">
+        <div className="navlinks flex w-full text-center justify-center">
+          <ol className="space-x-7 text-[16px] text-blue-700 flex">
+            <li>
+              <a
+                href="tel:+9077710685"
+                className="hover:text-blue-500 inline-flex items-center"
+              >
+                •&nbsp;
+                <FaPhoneAlt size={12} className="mr-1" />
+                +2349077710685
+              </a>
+            </li>
 
-  
-                <header className='flex space-x-24 py-5 resume-header'>
-                    <img src={myphoto} alt="" className='  object-cover w-32 h-32 border-2  border-transparent bg-gradient-to-r from-pink-400 to-purple-400 mx-5 rounded-full' />
-                   
-                    <div className ="flex flex-col bg space-y-8">
-                      <ol className='container flex  space-x-5 bg-red-40 '>
-                        <li className=' frontend-eng= tracking-wide text-xs font-bold'>FRONTEND ENGINEER</li>
-                        <li className='text-xs font-bold'><a href="tel:+@347038502924">+2347036502924</a></li>
-                        <li className='text-xs text-underline'><a href="mailto:funmmy565@gmail.com">funmmy565@gmail.com</a></li>
-                     </ol>
-                      
-                       <p className=' header-name font-serif text-left tracking-widest text-5xl leading-30'> FUNMILAYO 
-                       <br /> FAYEMI
-                   
-                       </p>
+            <li>
+              <a
+                href="mailto:funmmy565@gmail.com"
+                className="hover:text-blue-500 inline-flex items-center">
+                •&nbsp;
+                <FaEnvelope size={12} className="mr-1" />
+                funmmy565@gmail.com
+              </a>
+            </li>
 
-                    </div>
-          
-                 </header>
-              
-               <hr className='w-screen hr' />
+            <li>
+              <a
+                href="https://www.linkedin.com/in/funmilayo-fayemi-7112ab272"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-blue-500 inline-flex items-center">
+                •&nbsp;
+                <FaLinkedin size={12} className="mr-1" />
+                Linkedin
+              </a>
+            </li>
 
-              <DigitalSkills/>  
-                    
+            <li>
+              <a
+                href="https://github.com/Debbie-alt"
+                className="hover:text-blue-500 inline-flex items-center">
+                •&nbsp;
+                <FaGithub size={12} className="mr-1" />
+                Github
+              </a>
+            </li>
 
-           </section>
-           <a
-        href="/Funmi's Resume.pdf"
-        role='button'
-        download=""
-        target='_blank'
-        className=" pdf-download-btn text-white text-md absolute top-[1%] left-[1.5%] cursor-pointer">
-            {/* <IoCloudDownloadOutline /> */}
-            <PiDownloadBold/>
-         </a>
+            <li>
+              <p className="inline-flex items-center">
+                •&nbsp;
+                <FaMapMarkerAlt size={16} className="mr-1" />
+                Lagos Nigeria
+              </p>
+            </li>
+          </ol>
+        </div>
+      </header>
 
-           <FaRegTimesCircle
-           className='
-            pdf-download-btn text-md absolute top-[2%] left-[97%] cursor-pointer'
-           role='button'
-              onClick={()=>{
-            dgresume.classList.remove('prod')
-           }}
-           />
+      <main className="p-12">
+        <section>
+          <h1 className="text-center font-semibold text-xl font-serif">
+            Summary
+          </h1>
+          <hr className="mt-4 mb-4" />
+          <p className=" leading-[30px]">
+            I am an enthusiastic Frontend Developer proficient in HTML, CSS, and
+            JavaScript, specializing in React, React Native and Next.js.
+          </p>
+          <p className=" leading-[30px]">
+            I am passionate about crafting intuitive user interfaces and staying
+            updated with industry trends and advancements.
+          </p>
+        </section>
 
-          
-         
-        
-       
-        
-      </section>
-  )
-}
+        <section>
+          <h1 className="text-center font-semibold text-xl font-serif">
+            Experience
+          </h1>
+          <hr className="mt-4 mb-4" />
+          <ul className="list-disc list-inside  leading-[30px]">
+            <li>Implemented responsive layouts for web applications</li>
+            <li>Developed and optimized user interfaces using React.js</li>
+            <li>Collaborated with backend teams to ensure seamless integration</li>
+          </ul>
+        </section>
+      </main>
+    </div>
+  );
+};
 
-export default DigitalResume
+export default DigitalResume;

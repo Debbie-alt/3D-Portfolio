@@ -110,6 +110,7 @@ box-shadow: 2px 20px 25px -5px #333 ;
 
 .prod {
   display: flex;
+  flex-direction: column;
   position:absolute;
   z-index: 10;
   transition: all;
