@@ -44,7 +44,7 @@ ul{
 #dark {
   background-color: rgb(23, 21, 21);
   transition: background-color 0.3s color 0.3s;
-  color: azure;
+  color: rgb(205, 205, 205);
   animation: fadebg 0.3s ease-in-out 0  
 }
 @keyframes fadebg {
@@ -169,6 +169,10 @@ box-shadow: 2px 20px 25px -5px #333 ;
 
 #light .pdf-download-btn{
   color: black;
+}
+
+#light .tooltip{
+  color:white;
 }
 
 ::-webkit-scrollbar {

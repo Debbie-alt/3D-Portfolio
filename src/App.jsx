@@ -6,6 +6,8 @@ import SimpleSlider from "./Pages/ProjectCarousel";
 import Welcome from "./Pages/Welcome";
 import { motion, AnimatePresence } from "framer-motion";
 import plop from './assets/happy-pop.mp3'
+import SkillsPage from "./Pages/SkillsPage";
+import Contact from './Pages/Contact'
 
 function App() {
   const [mode, setMode] = useState("dark");
@@ -25,6 +27,9 @@ function App() {
           <Route path="/" element={<Welcome/>} />
           <Route path="/home" element={<Homepage mode={mode} />} />
          <Route path="/projects" element={<SimpleSlider/>}></Route>
+         <Route path="/skills" element={<SkillsPage/>}></Route>
+         <Route path="/about" element={<SkillsPage/>}></Route>
+         <Route path="/contact" element={<Contact/>}></Route>
         </Routes>
       </AnimatePresence>
     

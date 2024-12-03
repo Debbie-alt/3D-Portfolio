@@ -70,7 +70,19 @@ const Homepage = ({ mode }) => {
           ease: [0, 0.71, 0.2, 1.01],
 
          }}
-        exit={{rotateX:180, duration:1}} >
+        // exit={{duration: 0.3,
+        //   delay:0.5,
+        //   ease: [0, 0.71, 0.2, 1.01],
+        //   scale: {
+        //     type: "spring",
+        //     damping: 5,
+        //     stiffness: 100,
+        //     restDelta: 0.001
+        //   }}} 
+        exit={{rotateX:90, duration: 0.3,
+            delay:0.5,
+             ease: [0, 0.71, 0.2, 1.01]}}>
+        
         
         <div className="wall"></div>
         <div className="flex flex-col space-y-4  -mt-48  mx-5">
