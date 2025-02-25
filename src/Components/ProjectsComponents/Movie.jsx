@@ -2,7 +2,7 @@ import React from "react";
 import mov from "../../assets/ProjectPhotos/movattis.jpg";
 import Tilt from "react-parallax-tilt";
 
-const Smarta = () => {
+const Movie = () => {
   return (
     <Tilt
       className="parallax-effect-glare-scale"
@@ -13,9 +13,9 @@ const Smarta = () => {
       transitionSpeed={500}>
         
       <div className=" pj-pag flex  flex-col md:flex-row h-[70vh] md:h-[80vh] justify-center items-center   shadow-2xl shadow-black ">
-         <h1 className="font-bold text-2xl font-serif italic mx-5 ">GearLink</h1>
+         <h1 className="font-bold text-2xl font-serif italic mx-5 ">Movatti</h1>
       <section className="cardContainer mx-auto shadow-2xl shadow-black">
-        <figure className="card  rounded-md ">
+        <figure className="card screen-content h-[97%] object-contain top-[2%]  rounded-md ">
           <div className="bezelanimation1" />
           <div className="bezelanimation2" />
           <img src={mov} alt="" className="w-screen block " />
@@ -29,4 +29,4 @@ const Smarta = () => {
   );
 };
 
-export default Smarta;
+export default Movie;

@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../Projects.css";
-import Smarta from "../Components/ProjectsComponents/Gearlink.jsx";
+import Gearlink from "../Components/ProjectsComponents/Gearlink.jsx";
 import Movie from "../Components/ProjectsComponents/Movie.jsx";
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
@@ -47,7 +47,7 @@ export default function SimpleSlider() {
           transitionSpeed={200}>
           <Slider {...settings}>
             <Movie />
-            <Smarta />
+            <Gearlink />
           </Slider>
         </Tilt>
       </motion.div>

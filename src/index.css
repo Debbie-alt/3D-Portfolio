@@ -34,7 +34,7 @@ ul{
 }
 
 #light {
-  background-color:#c0c0c3;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.6), #d5c7cc, #a0a0a1);
   color: black;
   height: 100vh;
   /* transition: background-color 1s color 1s; */
@@ -419,4 +419,6 @@ box-shadow: 2px 20px 25px -5px #333 ;
   1px -12px 1px rgb(165, 25, 74),
 }
  }
- 
+
+
+
