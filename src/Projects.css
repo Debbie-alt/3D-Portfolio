@@ -21,7 +21,7 @@
 
 #dark .pj-pag{
   background-color: #222222;
-  box-shadow: 0px 3px 6px 4px pink;
+  box-shadow: 0px 3px 6px 4px white;
 
 }
 .cardContainer  .card img{
@@ -35,8 +35,8 @@
 .demobtn{
       z-index: 5;
       position: absolute;
-      bottom: 60px;
-      left: 45%;
+      bottom: 10px;
+      left: 42%;
 }
 .bezelanimation1{
       animation: crt 2s ease-in-out infinite alternate-reverse ;
