@@ -61,27 +61,21 @@ const Homepage = ({ mode }) => {
 
   
   return (
-    <>
-     
-        <motion.div className=""
-        initial={{width: 0}}
-        animate={{width: "80vw"}}
-         transition={{opacity:0,
-          ease: [0, 0.71, 0.2, 1.01],
-
-         }}
-        // exit={{duration: 0.3,
-        //   delay:0.5,
-        //   ease: [0, 0.71, 0.2, 1.01],
-        //   scale: {
-        //     type: "spring",
-        //     damping: 5,
-        //     stiffness: 100,
-        //     restDelta: 0.001
-        //   }}} 
-        exit={{rotateX:90, duration: 0.3,
-            delay:0.5,
-             ease: [0, 0.71, 0.2, 1.01]}}>
+        <motion.div
+          className=""
+          initial={{ width: 0 }}
+          animate={{ width: "80vw" }}
+          exit={{
+            scale: 0.8, 
+            duration: 0.1,
+            ease: [0.25, 1.25, 0.5, 1], 
+            transition: {
+              // type: "spring",
+              damping: 10, 
+              stiffness: 150, 
+              restDelta: 0.001
+            },
+          }} >
         
         
         <div className="wall"></div>
@@ -216,8 +210,6 @@ const Homepage = ({ mode }) => {
         </figure>
         <Scroll />
       </motion.div>
-      
-    </>
 
   );
 };
