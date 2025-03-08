@@ -20,7 +20,7 @@ const Linktree = () => {
             src={linkedin}
             alt="Resume link"
             id="myResume"
-            className="w-8 md:w-14"
+            className="w-10 md:w-14"
             role="button"
           />
         </Link>

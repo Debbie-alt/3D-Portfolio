@@ -6,7 +6,7 @@ const Myself = () => {
       <img
         src="https://img.icons8.com/bubbles/100/bolivian-girl.png" 
         alt=""  
-        className="w-[50px] md:w-14"
+        className="w-12 md:w-14"
         role="button"
       />
       

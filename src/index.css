@@ -67,12 +67,12 @@ ul{
   background: linear-gradient(to right,    rgba(255, 255, 255, 0.1),  #c54b7a,   #a0a0a1);
     backdrop-filter: blur(15px);
 }
-.Aboutme{
+.glass-box{
   background-color: rgb(223, 217, 217);
   background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(15px);
 }
-#light .Aboutme {
+#light .glass-box {
 box-shadow: 2px 20px 25px -5px #333 ;
 }
 #dark .carousel-button{
@@ -376,7 +376,7 @@ box-shadow: 2px 20px 25px -5px #333 ;
  .welcome-page h1{
       font-size: 4.1em;
  } 
- .Aboutme a img{
+ .glass-box a img{
   width: 55px;
  }
  .floor{

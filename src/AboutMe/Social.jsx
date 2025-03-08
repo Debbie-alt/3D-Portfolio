@@ -21,7 +21,7 @@ const Social = () => {
    <div className=" top-[0px]  ">
       <img src={image} alt="about-me-female"       
         id="myResume"
-        className="  w-[50px] md:w-16 "
+        className="  w-12 md:w-16 "
         role="button"
         onClick={openSocial} />
       

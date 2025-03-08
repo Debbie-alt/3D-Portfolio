@@ -4,7 +4,7 @@ import Experience from './Experience'
 
 const DigitalSkills = () => {
   return (
-      <main className="px-0 space-x-2  w-full  p-5 font-extralight flex ">
+      <main className="px-0 space-x-2  w-full  p-5 font-extralight flex mx-auto bg-red-500">
                  
       <section className='w-1/3 py-2 container pl-8 space-y-4  skills-section '>
         <figure className='flex space-x-2 rounded-full bg-black pl-1 pr-4 py-1'>

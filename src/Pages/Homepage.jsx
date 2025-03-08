@@ -39,7 +39,7 @@ const Homepage = ({ mode }) => {
   React.useEffect(() => {
     if (elx.current) {
       const typed = new Typed(elx.current, {
-        strings: ['<span class="text animate-pulse tracking-tightest text-[2.4em] md:text-[3.7em]" style:"whiteSpace: nowrap,wordBreak: keep-all">FUNMIS PORTFOLIO</span>'
+        strings: ['<span class="text animate-pulse tracking-tightest mx-3 sm:mx-0 text-[2.6em] md:text-[3.7em]" style:"whiteSpace: nowrap,wordBreak: keep-all">FUNMIS PORTFOLIO</span>'
       ],
         typeSpeed: 90,
         contentType: 'html', 
@@ -79,7 +79,7 @@ const Homepage = ({ mode }) => {
         
         
         <div className="wall"></div>
-        <div className="flex flex-col space-y-4  -mt-48  mx-5">
+        <div className="flex flex-col space-y-4  -mt-40 md:-mt-48 mx-5">
           <section className=" flex  space-x-12   py-7">
 
             <motion.div
@@ -203,8 +203,7 @@ const Homepage = ({ mode }) => {
         </motion.div>
         
         <figure
-          className={`bg-[#ffffff1a] w-[120px] font-serif opacity-200 ${textColor} backdrop:blur-lg animate-pulse rounded-xl text-center p-2 mr-10 bottom-[38px] py-3 fixed right-[0px] text-[10px] `}
-        >
+          className={`bg-[#ffffff1a] w-[120px] font-serif opacity-200 ${textColor} backdrop:blur-lg animate-pulse rounded-xl text-center p-2 mr-5 sm:mr-10 bottom-[38px] py-3 fixed right-[0px] text-[12px] `}>
           {" "}
           Don't like {mode} mode? <br />  Click on the icon!
         </figure>

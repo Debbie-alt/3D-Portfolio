@@ -19,7 +19,7 @@ const DigitalResume = () => {
   };
   return (
     <div
-      className=" digitalresume Aboutme border-2 border-transparent left-0  h-[70%] lg:h-[90vh]  relative shadow-xl lg:top-2 w-[90vw] md:w-[70%] rounded-md  hidden " id="dgresume">
+      className=" digitalresume glass-box border-2 border-transparent left-[-4%] md:left-0 h-[70%] lg:h-[90vh]  relative shadow-xl lg:top-2 w-[85vw] md:w-[70%] rounded-md  hidden " id="dgresume">
       <header className="space-y-2 flex flex-col items-center pt-4">
         <div className="flex w-full justify-between  px-4">
           <div>
@@ -38,15 +38,15 @@ const DigitalResume = () => {
         </div>
         
         <div>
-          <h1 className="text-center font-semibold text-3xl font-serif">
+          <h1 className="text-center font-semibold text-xl sm:text-3xl font-serif">
             FUNMILAYO FAYEMI
           </h1>
-          <p className="text-center  text-lg font-serif mt-1 mb-1">
+          <p className="text-center  sm:text-lg font-serif mt-1 mb-1">
             Frontend Developer and Software Engineer
           </p>
         </div>
 
-        <div className="navlinks flex w-full text-center justify-center">
+        <div className="navlinks flex flex-wrap w-full text-center justify-center">
           <ol className="space-x-7 text-[16px] text-blue-700 flex">
             <li>
               <a
@@ -105,7 +105,7 @@ const DigitalResume = () => {
         </div>
       </header>
 
-      <main className="p-12">
+      <main className=" p-6 sm:p-8 md:p-12">
         <section>
           <h1 className="text-center font-semibold text-xl font-serif">
             Summary
@@ -135,7 +135,7 @@ const DigitalResume = () => {
           </ul>
 
           <div class="experience mt-10">
-            <div class="flex justify-between">
+            <div class="flex flex-col sm justify-between">
               <h2 class="text-2xl">Health Bench</h2>
               <p>Remote </p>
             </div>

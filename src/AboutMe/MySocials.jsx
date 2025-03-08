@@ -22,7 +22,7 @@ const MySocials = React.forwardRef((props, ref) => {
     <>
       <section
           // ref={ref}
-        className=" Aboutme rounded-xl shadow-pink-300 left-[-10%] md:left-[13.5%] py-0 md:py-2.5   relative shadow-xl top-[10%] lg:top-10 
+        className=" glass-box rounded-xl shadow-pink-300 left-[-10%] md:left-[13.5%] py-0 md:py-2.5   relative shadow-xl top-[10%] lg:top-10 
            w-[85vw] md:w-[550px]  hidden  flex-col px- "
         id="socials">
           
