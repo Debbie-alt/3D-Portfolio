@@ -38,7 +38,7 @@
       bottom: 10px;
       left: 42%;
 }
-.bezelanimation1{
+/* .bezelanimation1{
       animation: crt 2s ease-in-out infinite alternate-reverse ;
       position: absolute;
       z-index: 4;
@@ -54,8 +54,8 @@
    to{
       top: 76%;
       }   
-}
-.bezelanimation2{
+} */
+/* .bezelanimation2{
       animation: crt 3s ease-in-out infinite alternate ;
       position: absolute;
       z-index: 4;
@@ -70,7 +70,7 @@
    to{
             top: 13%;
       }  
-}
+} */
 @media (max-width:768px) {
    .pj-pag{
       width: 90vw;
@@ -84,7 +84,7 @@
       height: 60%;
    }
    .demobtn{
-      top: 100%;
+      top: 90%;
       left: 30%;
    }
 }

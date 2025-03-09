@@ -19,7 +19,8 @@ const DigitalResume = () => {
   };
   return (
     <div
-      className=" digitalresume glass-box border-2 border-transparent left-[-4%] md:left-0 h-[70%] lg:h-[90vh]  relative shadow-xl lg:top-2 w-[85vw] md:w-[70%] rounded-md  hidden " id="dgresume">
+      className=" digitalresume glass-box border-2 border-transparent left-[-4%] md:left-0 h-[80%] md:h-[70%] lg:h-[90vh]  
+      relative shadow-xl lg:top-2 w-[85vw] md:w-[70%] rounded-md  hidden " id="dgresume">
       <header className="space-y-2 flex flex-col items-center pt-4">
         <div className="flex w-full justify-between  px-4">
           <div>
@@ -38,7 +39,7 @@ const DigitalResume = () => {
         </div>
         
         <div>
-          <h1 className="text-center font-semibold text-xl sm:text-3xl font-serif">
+          <h1 className="text-center font-semibold text-xl sm:text-3xl font-serif mt-3">
             FUNMILAYO FAYEMI
           </h1>
           <p className="text-center  sm:text-lg font-serif mt-1 mb-1">
@@ -46,8 +47,8 @@ const DigitalResume = () => {
           </p>
         </div>
 
-        <div className="navlinks flex flex-wrap w-full text-center justify-center">
-          <ol className="space-x-7 text-[16px] text-blue-700 flex">
+        <div className="navlinks flex  w-full text-center justify-center px">
+          <ol className="space-x-2 text-[16px] text-blue-700 flex  ">
             <li>
               <a
                 href="tel:+9077710685"
@@ -75,7 +76,7 @@ const DigitalResume = () => {
                 href="https://www.linkedin.com/in/funmilayo-fayemi-7112ab272"
                 target="_blank"
                 rel="noreferrer"
-                className="hover:text-blue-500 inline-flex items-center"
+                className="hover:text-blue-500 items-center hidden md:inline-flex"
               >
                 •&nbsp;
                 <FaLinkedin size={12} className="mr-1" />
@@ -86,7 +87,7 @@ const DigitalResume = () => {
             <li>
               <a
                 href="https://github.com/Debbie-alt"
-                className="hover:text-blue-500 inline-flex items-center"
+                className="hover:text-blue-500 hidden md:inline-flex items-center"
               >
                 •&nbsp;
                 <FaGithub size={12} className="mr-1" />
@@ -95,7 +96,7 @@ const DigitalResume = () => {
             </li>
 
             <li>
-              <p className="inline-flex items-center">
+              <p className="hidden md:inline-flex items-center">
                 •&nbsp;
                 <FaMapMarkerAlt size={16} className="mr-1" />
                 Lagos Nigeria
@@ -135,13 +136,13 @@ const DigitalResume = () => {
           </ul>
 
           <div class="experience mt-10">
-            <div class="flex flex-col sm justify-between">
+            <div class="flex flex-col md:flex-row justify-between">
               <h2 class="text-2xl">Health Bench</h2>
               <p>Remote </p>
             </div>
             <div class="flex justify-between">
               <h2 class="font-semibold">Frontend Developer </h2>
-              <p>08/2024 - 11/2024</p>
+              <p>08/2024 - Present</p>
             </div>
             <ol class="mt-4 space-y-1">
               <li>
@@ -161,7 +162,7 @@ const DigitalResume = () => {
               </li>
             </ol>
 
-            <div class="flex justify-between mt-10">
+            <div class="flex flex-col md:flex-row justify-between mt-10">
               <h2 class="text-2xl ">01 Technologies</h2>
               <p>Lagos Nigeria (Full-time)</p>
             </div>
@@ -184,12 +185,12 @@ const DigitalResume = () => {
           </div>
 
           <div class="experience mt-10">
-            <div class="flex justify-between">
-              <h2 class="text-2xl ">Codeweb Project Solutions</h2>
+          <div class="flex flex-col md:flex-row justify-between">
+          <h2 class="text-2xl ">Codeweb Project Solutions</h2>
               <p>Lagos, Nigeria (Part Time)</p>
             </div>
             <div class="flex justify-between">
-              <h2 class="font-semibold">Frontend Developer | Intern </h2>
+              <h2 class="font-semibold ">Frontend Intern </h2>
               <p>08/2023 - 05/2024</p>
             </div>
             <ol class=" mt-4 space-y-1">
@@ -217,8 +218,8 @@ const DigitalResume = () => {
           </div>
 
           <div class="experience mt-10">
-            <div class="flex justify-between">
-              <h2 class="text-2xl ">DCA</h2>
+          <div class="flex flex-col md:flex-row justify-between">
+          <h2 class="text-2xl ">DCA</h2>
               <p>Remote (Contract)</p>
             </div>
             <div class="flex justify-between">
@@ -242,8 +243,8 @@ const DigitalResume = () => {
           </div>
 
           <div class="experience mt-10 mb-10 ">
-            <div class="flex justify-between">
-              <h2 class="text-2xl dark:text-white">Splendid Academy</h2>
+          <div class="flex flex-col md:flex-row justify-between">
+          <h2 class="text-2xl ">Splendid Academy</h2>
               <p>Lagos, Nigeria</p>
             </div>
             <div class="flex justify-between">
@@ -274,7 +275,7 @@ const DigitalResume = () => {
           <div class="py-4 ">
             <div class="">
               <p class="font-semibold text-xl">Technologies </p>
-              <ul class="text-lg font-serif italic  ">
+              <ul class="md:text-lg font-serif italic  ">
                 • Html5 and Css3 • JavaScript • React.Js • React Native •
                 Next.Js • TailwindCss • Bootstrap • Linux • Htmx • ShadcnUI •
                 MySql • Version Control
@@ -283,14 +284,14 @@ const DigitalResume = () => {
           </div>
           <div class="space-y-2 flex space-x-4 items-center">
             <p class="font-semibold text-xl">Tools</p>
-            <ul class="text-lg font-serif italic ">
+            <ul class="md:text-lg font-serif italic ">
               • Figma • Github • Vercel • Docker • Swagger • Firebase • Vim
             </ul>
           </div>
 
           <div class="space-y-2 flex space-x-4 items-center">
             <p class="font-semibold text-xl ">Soft Skills </p>
-            <ul class="text-lg font-serif italic ">
+            <ul class="md:text-lg font-serif italic ">
               • TeamWork • Communication • Time Management • Resilience •
               Problem-Solving
             </ul>
@@ -304,34 +305,34 @@ const DigitalResume = () => {
           <hr class="mt-4 " />
 
           <div class="flex justify-between mt-12">
-            <h2 class="text-2xl font-[500] font-serif">University of Ilorin</h2>
+            <h2 class=" text-lg sm:text-2xl font-[500] font-serif">University of Ilorin</h2>
           </div>
-          <div class="flex justify-between ">
-            <h2 class="font-semibol italic font-serif ">
+          <div class="flex justify-between items-center">
+            <h2 class=" italic font-serif ">
               B.Sc | Computer Science{" "}
             </h2>
-            <p class="-mt-4">2024</p>
+            <p class="md:-mt-4">2024</p>
           </div>
 
-          <div class="flex justify-between mt-7">
-            <h2 class="text-2xl  font-[500] font-serif">Holberton School</h2>
+          <div class="flex justify-between mt-7 ">
+            <h2 class=" text-lg sm:text-2xl  font-[500] font-serif">Holberton School</h2>
           </div>
-          <div class="flex justify-between ">
-            <h2 class="font-semibol italic font-serif ">
+          <div class="flex justify-between items-center ">
+            <h2 class=" italic font-serif ">
               Software Engineering{" "}
             </h2>
-            <p class="-mt-4">05/2023 - 08/2024</p>
+            <p class="md:-mt-4">05/2023 - 08/2024</p>
           </div>
         </section>
 
         <section>
-  <h1 class="text-center font-semibold text-xl font-serif">
+  <h1 class="text-center font-semibold text-xl font-serif  mt-8 md:mt-0">
      Training/Courses
   </h1>
      <hr class="mt-4 mb-5"/>
 
      <ul class="space-y-3">
-      <li >Fullstack Web Development -  <span class="font-[500] font-sans">CODEWEB CODING ACADEMY</span> </li>
+      <li >Fullstack Web Development -  <span class="font-[500] font-sans"> CODEWEB CODING  ACADEMY</span> </li>
       <li>The Frontend Career Development Path - <span class="font-[500] font-sans">SCRIMBA</span></li>
        <li>Frontend Development Training Internship - <span class="font-[500] font-sans">SIDE HUSTLE</span></li>
        <li>Software Engineering -  <span class="font-[500] font-sans" >ALX AFRICA / HOLBERTON SCHOOL</span></li>
