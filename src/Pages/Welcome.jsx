@@ -38,7 +38,7 @@ const Welcome = () => {
             Welcome
           </h1>
           <h1 className="text-center to-text absolute"> To </h1>
-          <h1 className="mt-16 text-center bottom-40 absolute name">
+          <h1 className="md:mt-16 text-center bottom-40 absolute name">
             Funmi's
           </h1>
           <h1 className="mt-16 text-center bottom-14 absolute right-10 folio">

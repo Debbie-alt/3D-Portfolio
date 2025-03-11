@@ -291,8 +291,6 @@ box-shadow: 2px 20px 25px -5px #333 ;
   top: 30%;
   opacity: 0;
   
-
- 
 }
 @keyframes bounce-in {
   0% {
@@ -328,7 +326,7 @@ box-shadow: 2px 20px 25px -5px #333 ;
       opacity:0;
   }
   to{
-    right: 15%;
+    right: 20%;
     opacity: 1;
   }
 
