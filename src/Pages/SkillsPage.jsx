@@ -9,8 +9,6 @@ import framer from "../assets/framer_motion.png";
 // import docker from "../assets/docker.png";
 // import react from "../assets/react.png";
 // import next from "../assets/nextjs.png";
-import bootstrap from "../assets/bootstrap_icon.png";
-import sql from "../assets/sql.png";
 
 const floatingAnimation = {
   y: [0, -10, 10, -5, 0], // Moves up/down

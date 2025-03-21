@@ -65,17 +65,14 @@ const Homepage = ({ mode }) => {
           className=""
           initial={{ width: 0 }}
           animate={{ width: "80vw" }}
-          exit={{
-            scale: 0.8, 
-            duration: 0.1,
-            ease: [0.25, 1.25, 0.5, 1], 
-            transition: {
-              // type: "spring",
-              damping: 10, 
-              stiffness: 150, 
-              restDelta: 0.001
-            },
-          }} >
+          // animate={{width:window.innerWidth, opacity:1}}
+         
+          transition={{
+            duration: 0.5,
+            ease: [0, 0.71, 0.2, 1.01],
+           
+          }}
+          exit={{x: window.innerWidth, opacity:0}}>
         
         
         <div className="wall"></div>
