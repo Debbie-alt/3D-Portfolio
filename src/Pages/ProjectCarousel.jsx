@@ -38,18 +38,18 @@ export default function SimpleSlider() {
         onClick={()=>{
           navigate('/skills')
         }}/>
-        <Tilt
+        {/* <Tilt
           className="parallax-effect-glare-scale"
           perspective={1900}
           tiltEnable={true}
           scale={1}
           gyroscope={true}
-          transitionSpeed={200}>
+          transitionSpeed={200}> */}
           <Slider {...settings}>
             <Movie />
             <Gearlink />
           </Slider>
-        </Tilt>
+        {/* </Tilt> */}
       </motion.div>
     );
   }
