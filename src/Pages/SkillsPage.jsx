@@ -13,19 +13,21 @@ import rust from "../assets/icons8-rust-logo.gif"
 import solana from "../assets/solana.png"
 import tailwind from '../assets/tailwind.png'
 import angular from '../assets/angular.png'
-
-const floatingAnimation = {
-  y: [0, -10, 10, -5, 0], // Moves up/down
-  x: [0, 10, -10, 5, 0], // Moves left/right
-  transition: {
-    duration: 5,
-    repeat: Infinity,
-    ease: "easeInOut",
-  },
-};
+import bootstrap from '../assets/bts.png'
+import starknet from '../assets/starknet.png'
+import ts from '../assets/ts.png'
+// const floatingAnimation = {
+//   y: [0, -10, 10, -5, 0], // Moves up/down
+//   x: [0, 10, -10, 5, 0], // Moves left/right
+//   transition: {
+//     duration: 5,
+//     repeat: Infinity,
+//     ease: "easeInOut",
+//   },
+// };
 
 const SkillsPage = () => {
-  const skills = [js, css, git, solana, rust, react, next, framer, tailwind, angular];
+  const skills = [js, css, git, solana, rust, react, next, ts, tailwind, angular, bootstrap, starknet];
 
   return (
     <div className="grid grid-cols-4 items-center justify-center gap-5 p-16 h-screen w-screen">
@@ -34,7 +36,6 @@ const SkillsPage = () => {
           key={index}
           src={skill}
           className="w-24"
-          animate={floatingAnimation}
         />
       ))}
     </div>
