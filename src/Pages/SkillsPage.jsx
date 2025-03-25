@@ -21,26 +21,32 @@ const SkillsPage = () => {
   const skills = [js, css, git, solana, rust, react, next, ts, tailwind, angular, bootstrap, starknet];
 
   return (
-    <div className="grid grid-cols-4 items-center justify-center gap-5 p-16 h-screen w-screen container mx-auto">
+    <div className="flex gap-5 items-center  justify-center  ">
+  
+    <div className="grid grid-cols-4 items-center justify-center gap-8 p-16 h-scren mt-20  w-[80vw]  border rounded-full">
       {skills.map((skill, index) => (
         <motion.img
           key={index}
           src={skill}
-          className="box w-24 hover:w-28 cursor-pointer"
+          className="box w-24 hover:w-20 cursor-pointer"
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{
             duration: 0.5,
-            delay: index * 0.5, // Delay each image by 0.5s multiplied by index
+            delay: index * 0.2, // Delay each image by 0.5s multiplied by index
             ease: [0, 0.71, 0.2, 1.01],
             scale: {
             type: "spring",
               damping: 5,
                stiffness: 100,
                 restDelta: 0.001
-              }          }}
-        />
-      ))}
+              }}}
+        /> ))}
+
+    </div>
+
+    <p className=" text-7xl  text-center my-skills">My Skills </p>
+  
     </div>
   );
 };

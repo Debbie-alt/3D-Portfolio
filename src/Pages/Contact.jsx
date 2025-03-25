@@ -4,6 +4,9 @@ import Typed from 'typed.js';
 import { motion, AnimatePresence } from "framer-motion";
 import plop from '../assets/ploptrimmed.mp3'
 import ContactForm from "../Components/ContactForm";
+import { FaArrowCircleLeft } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
+
 
 
 
@@ -11,6 +14,8 @@ import ContactForm from "../Components/ContactForm";
 const Homepage = ({ mode }) => {
   const [textColor, setTextColor] = useState("white");
   const elx = React.useRef(null);
+
+  const scrolltoPage = useNavigate()
 
   useEffect(() => {
     if (mode == "dark") {
@@ -67,6 +72,15 @@ const Homepage = ({ mode }) => {
         
         
         <div className="wall"></div>
+
+          <FaArrowCircleLeft
+                 className="text-lg text-[#e94d79] cursor-pointer fixed top-[5%] 
+               left-[10%]  animate-bounce z-40  mx-[80vw]"
+                 onClick={()=>{
+                   scrolltoPage('/projects')
+                 }}
+               />      
+
         <div className="flex flex-col space-y-4  -mt-20 md:-mt-28 mx-24">
           
             <ContactForm/>

@@ -421,4 +421,44 @@ box-shadow: 2px 20px 25px -5px #333 ;
 .contact-form{
   background-color: rgb(223, 217, 217);
   background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(15px);}
+  backdrop-filter: blur(15px);
+  box-shadow:5px 10px 20px rgba(0,0,0,0.3);
+  transform: rotateX(5deg) rotateY(10deg);
+  perspective:1000px;
+  
+  }
+
+  #light .contact-form {
+    box-shadow: 2px 20px 25px -5px #333 ;
+    }
+
+    .my-skills{
+       writing-mode: vertical-lr;
+       text-orientation: sideways;
+       /* transform: skew(0deg) ; */
+  font-weight: 700;
+  color: #eb6389;
+  font-size: 5.2em;
+  text-shadow:
+    10px 50px 20px rgb(197, 71, 134),
+    1px -2px 1px rgb(165, 25, 74),
+    1px -2px 1px rgb(165, 25, 74),
+    1px -3px 1px rgb(165, 25, 74),
+    1px -3px 1px rgb(165, 25, 74),
+    1px -3px 1px rgb(165, 25, 74),
+    1px -4px 1px rgb(165, 25, 74),
+    1px -5px 1px rgb(165, 25, 74),
+    0 0 2px #ffffff, 0 0 4px #ffffff, 0 0 6px #ffffff,
+    1px -6px 1px rgb(165, 25, 74),
+    1px -7px 1px rgb(165, 25, 74),
+    1px -8px 1px rgb(165, 25, 74),
+    1px -9px 1px rgb(165, 25, 74),
+    1px -10px 1px rgb(165, 25, 74),
+    1px -11px 1px rgb(165, 25, 74),
+    1px -12px 1px rgb(165, 25, 74),
+    1px -13px;}
+    
+
+    .my{
+      writing-mode: vertical-rl;
+    }
