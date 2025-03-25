@@ -1,17 +1,9 @@
 import React from "react";
-import Resume from "../Components/Icons/Resume";
-import Myself from "../AboutMe/Myself";
-import Mail from "../Components/Icons/Mail";
-import Linktree from "../AboutMe/Linktree";
-import Social from "../AboutMe/Social";
 import { useState, useEffect } from "react";
-import Github from "../Components/Icons/Github";
-import MySocials from "../AboutMe/MySocials";
-import DigitalResume from "../AboutMe/DigitalResume";
-import Scroll from "../Components/ScrollDown";
 import Typed from 'typed.js';
 import { motion, AnimatePresence } from "framer-motion";
 import plop from '../assets/ploptrimmed.mp3'
+import ContactForm from "../Components/ContactForm";
 
 
 
@@ -38,7 +30,7 @@ const Homepage = ({ mode }) => {
   React.useEffect(() => {
     if (elx.current) {
       const typed = new Typed(elx.current, {
-        strings: ['<span class="text animate-pulse tracking-tightest mx-3 sm:mx-0 text-[2.8em] md:text-[3.7em]" style:"whiteSpace: nowrap,wordBreak: keep-all">CONTACT ME</span>'
+        strings: ['<span class="text animate-pulse tracking-tightest mx-32 text-[2.8em] md:text-[3.2em]" style:"whiteSpace: nowrap,wordBreak: keep-all">CONTACT ME</span>'
       ],
         typeSpeed: 90,
         contentType: 'html', 
@@ -75,10 +67,9 @@ const Homepage = ({ mode }) => {
         
         
         <div className="wall"></div>
-        <div className="flex flex-col space-y-4  -mt-40 md:-mt-48 mx-5">
+        <div className="flex flex-col space-y-4  -mt-20 md:-mt-28 mx-24">
           
-
-          <section className=" flex space-x-8"></section>
+            <ContactForm/>
         </div>
         <div className="floor"></div>
       
