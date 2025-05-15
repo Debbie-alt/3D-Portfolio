@@ -23,7 +23,7 @@ const SkillsPage = () => {
   return (
     <div className="flex gap-5 items-center justify-center  ">
   
-    <div className="grid grid-cols-2  md:grid-cols-4 items-center justify-center gap-10 p-16  mt-20 w-[60vw]  ">
+    <div className="grid grid-cols-4 items-center justify-center gap-8 p-16  mt-20  w-[70vw]  ">
       {skills.map((skill, index) => (
       <div className='ball bubble flex items-center justify-center'>
         <motion.img
